@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Visual Sitemap</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2C5F7C;
+            border-bottom: 3px solid #E67E50;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2C5F7C;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2C5F7C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #2C5F7C;
+            font-weight: 600;
+        }
+
+        em {
+            color: #666;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #E67E50;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.5;
+            margin: 1.5em 0;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #f8f8f2;
+            font-size: 0.95em;
+        }
+
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin: 0.5em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #2C5F7C;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        blockquote {
+            border-left: 4px solid #E67E50;
+            margin: 1.5em 0;
+            padding: 0.5em 1.5em;
+            background: #f9f9f9;
+            font-style: italic;
+            color: #666;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 2em 0;
+        }
+
+        a {
+            color: #2C5F7C;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #2C5F7C;
+        }
+
+        .header-info {
+            background: #E8F4F8;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .header-info p {
+            margin: 0.5em 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            pre {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                max-width: 100%;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-info">
+            <p><strong>Document:</strong> 1_Visual_Sitemap</p>
+            <p><strong>Generated from:</strong> 1_Visual_Sitemap.md</p>
+            <p><strong>WegoErgo Website Redesign Project</strong></p>
+        </div>
+        <h1>WegoErgo Website Sitemap</h1>
+<p><strong>Visual Site Structure for Squarespace Implementation</strong></p>
+<hr />
+<h2>Primary Navigation Structure</h2>
+<pre class="codehilite"><code>┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  [LOGO]     SERVICES  |  INDUSTRIES  |  PRODUCTS  |  ABOUT  |  CONTACT │
+│  WegoErgo            ▼              ▼             ▼         ▼           │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h2>1. SERVICES (Dropdown Menu)</h2>
+<pre class="codehilite"><code>SERVICES
+├── Services Overview (Landing Page)
+├── Ergonomic Assessments ⭐ (Most Important)
+├── Ergonomic Program Reviews ⭐ (NEW)
+├── On-Site &amp; Virtual Training ⭐ (NEW)
+├── Workspace Design
+└── Product Selection &amp; Sourcing
+</code></pre>
+
+<h3>URLs:</h3>
+<ul>
+<li><code>/services</code></li>
+<li><code>/services/ergonomic-assessments</code></li>
+<li><code>/services/program-reviews</code></li>
+<li><code>/services/training</code></li>
+<li><code>/services/workspace-design</code></li>
+<li><code>/services/product-selection</code></li>
+</ul>
+<hr />
+<h2>2. INDUSTRIES (Dropdown Menu)</h2>
+<pre class="codehilite"><code>INDUSTRIES WE SERVE
+├── Industries Overview (Landing Page)
+├── Healthcare
+├── Government &amp; Public Sector
+├── Corporate &amp; Tech
+├── Education
+├── Lab &amp; Life Sciences
+├── Small Business
+├── Hospitality
+└── Outdoor Spaces
+</code></pre>
+
+<h3>URLs:</h3>
+<ul>
+<li><code>/industries</code></li>
+<li><code>/industries/healthcare</code></li>
+<li><code>/industries/government</code></li>
+<li><code>/industries/corporate</code></li>
+<li><code>/industries/education</code></li>
+<li><code>/industries/lab-life-sciences</code></li>
+<li><code>/industries/small-business</code></li>
+<li><code>/industries/hospitality</code></li>
+<li><code>/industries/outdoor-spaces</code></li>
+</ul>
+<hr />
+<h2>3. PRODUCTS &amp; PARTNERS (Dropdown Menu)</h2>
+<pre class="codehilite"><code>PRODUCTS &amp; PARTNERS
+├── Products &amp; Partners Overview ⭐ (Key Strategic Page)
+│
+├── PARTNER BRANDS (Product Manufacturers)
+│   ├── OM Seating
+│   ├── LoneStar Ergonomics
+│   ├── Workrite Ergonomics
+│   ├── [Partner 4]
+│   ├── [Partner 5]
+│   └── [Partner 6]
+│
+├── EDUCATION PARTNERS
+│   └── Worksite International ⭐ (Schooling Partner - NEW)
+│
+├── TOP DOZEN SPOTLIGHT ⭐ (NEW)
+│   └── Michael's Most Recommended Products
+│
+└── PRODUCT CATEGORIES
+    ├── Ergonomic Seating
+    ├── Desks &amp; Workstations
+    ├── Ergonomic Accessories
+    └── Outdoor Furniture
+</code></pre>
+
+<h3>URLs:</h3>
+<ul>
+<li><code>/products</code> (Main hub with Top Dozen feature)</li>
+<li><code>/products/partners</code> (All partners overview)</li>
+<li><code>/products/partners/om-seating</code></li>
+<li><code>/products/partners/lonestar-ergonomics</code></li>
+<li><code>/products/partners/workrite-ergonomics</code></li>
+<li><code>/products/partners/worksite-international</code> ⭐ (Education partner)</li>
+<li><code>/products/top-dozen</code> ⭐ (Featured recommendations)</li>
+<li><code>/products/seating</code></li>
+<li><code>/products/desks-workstations</code></li>
+<li><code>/products/accessories</code></li>
+<li><code>/products/outdoor</code></li>
+</ul>
+<h3>Individual Product Pages (nested under categories):</h3>
+<ul>
+<li><code>/products/seating/om-active-task-chair</code></li>
+<li><code>/products/seating/[product-name]</code></li>
+</ul>
+<hr />
+<h2>4. ABOUT (Dropdown Menu)</h2>
+<pre class="codehilite"><code>ABOUT
+├── About WegoErgo
+├── Meet Michael (Founder &amp; Ergonomist)
+└── Service Area (Bay Area Coverage)
+</code></pre>
+
+<h3>URLs:</h3>
+<ul>
+<li><code>/about</code></li>
+<li><code>/about/meet-michael</code></li>
+<li><code>/about/service-area</code></li>
+</ul>
+<hr />
+<h2>5. CONTACT (Single Page - No Dropdown)</h2>
+<pre class="codehilite"><code>CONTACT
+└── Contact / Schedule Consultation
+</code></pre>
+
+<h3>URL:</h3>
+<ul>
+<li><code>/contact</code></li>
+</ul>
+<hr />
+<h2>Complete Site Tree Visualization</h2>
+<pre class="codehilite"><code>HOME
+│
+├── SERVICES
+│   ├── Services Overview
+│   ├── Ergonomic Assessments
+│   ├── Ergonomic Program Reviews ⭐ NEW
+│   ├── On-Site &amp; Virtual Training ⭐ NEW
+│   ├── Workspace Design
+│   └── Product Selection &amp; Sourcing
+│
+├── INDUSTRIES
+│   ├── Industries Overview
+│   ├── Healthcare
+│   ├── Government &amp; Public Sector
+│   ├── Corporate &amp; Tech
+│   ├── Education
+│   ├── Lab &amp; Life Sciences
+│   ├── Small Business
+│   ├── Hospitality
+│   └── Outdoor Spaces
+│
+├── PRODUCTS &amp; PARTNERS
+│   ├── Products &amp; Partners Hub
+│   │
+│   ├── Top Dozen Spotlight ⭐ NEW
+│   │   └── Michael's Most Recommended Products
+│   │
+│   ├── Product Partner Brands
+│   │   ├── OM Seating
+│   │   ├── LoneStar Ergonomics
+│   │   ├── Workrite Ergonomics
+│   │   └── [Additional Partners]
+│   │
+│   ├── Education Partners
+│   │   └── Worksite International ⭐ NEW (Schooling Partner)
+│   │
+│   ├── Product Categories
+│   │   ├── Ergonomic Seating
+│   │   │   └── [Featured Products from Top Dozen]
+│   │   ├── Desks &amp; Workstations
+│   │   │   └── [Featured Products from Top Dozen]
+│   │   ├── Ergonomic Accessories
+│   │   │   └── [Featured Products from Top Dozen]
+│   │   └── Outdoor Furniture
+│   │       └── [Featured Products from Top Dozen]
+│   │
+│   └── Curated Catalog (Focus on Top Dozen, not full inventory)
+│
+├── ABOUT
+│   ├── About WegoErgo
+│   ├── Meet Michael
+│   └── Service Area
+│
+└── CONTACT
+    └── Schedule Consultation
+</code></pre>
+
+<hr />
+<h2>Footer Navigation</h2>
+<pre class="codehilite"><code>┌────────────────────┬────────────────────┬────────────────────┬────────────────┐
+│ SERVICES           │ QUICK LINKS        │ INDUSTRIES         │ CONTACT        │
+├────────────────────┼────────────────────┼────────────────────┼────────────────┤
+│ Assessments        │ About Us           │ Healthcare         │ Phone          │
+│ Program Reviews    │ Meet Michael       │ Corporate          │ Email          │
+│ Training           │ Service Area       │ Education          │ Address        │
+│ Workspace Design   │ Top Dozen          │ Small Business     │ Hours          │
+│ Product Sourcing   │ Our Partners       │ View All           │                │
+└────────────────────┴────────────────────┴────────────────────┴────────────────┘
+
+                        [Social Media Icons]
+              © 2026 WegoErgo. All rights reserved.
+                   Privacy Policy | Terms of Service
+</code></pre>
+
+<hr />
+<h2>Page Count Summary</h2>
+<h3>Total Pages to Build:</h3>
+<p><strong>Phase 1 (Critical - Build First):</strong><br />
+- Homepage = 1<br />
+- Services = 6 pages ⭐ (was 4, added Program Reviews + Training)<br />
+- About = 3 pages<br />
+- Contact = 1 page<br />
+<strong>Subtotal: 11 pages</strong> ⭐ (was 9)</p>
+<p><strong>Phase 2 (Important):</strong><br />
+- Industries = 9 pages (overview + 8 industries)<br />
+<strong>Subtotal: 9 pages</strong></p>
+<p><strong>Phase 3 (Product Showcase):</strong><br />
+- Products Hub = 1 (featuring Top Dozen)<br />
+- Top Dozen Spotlight = 1 ⭐ NEW<br />
+- Partner Brand Pages = 6-7 pages (including Worksite International)<br />
+- Product Category Pages = 4 pages<br />
+<strong>Subtotal: 12-13 pages</strong> ⭐ (was 11)</p>
+<p><strong>Phase 4 (Ongoing - Add as needed):</strong><br />
+- Individual Product Pages = ~12 featured products from Top Dozen ⭐<br />
+- Blog/Resources (future phase) = Not counted</p>
+<p><strong>Total Core Pages: 32-34 pages</strong> ⭐ (was 29)<br />
+<strong>Individual Products: Focus on Top Dozen (~12 products), not full catalog</strong> ⭐</p>
+<hr />
+<h2>Navigation Design Notes for Squarespace</h2>
+<h3>Desktop Navigation:</h3>
+<pre class="codehilite"><code>┌─────────────────────────────────────────────────────────────────┐
+│ [LOGO]  SERVICES ▼  INDUSTRIES ▼  PRODUCTS ▼  ABOUT ▼  CONTACT │
+│         ┌─────────┐                                             │
+│         │ Overview│                                             │
+│         │ Assess  │                                             │
+│         │ Design  │                                             │
+│         │ Source  │                                             │
+│         └─────────┘                                             │
+└─────────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h3>Mobile Navigation (Hamburger Menu):</h3>
+<pre class="codehilite"><code>☰
+├─ HOME
+├─ SERVICES ▼
+│  ├─ Overview
+│  ├─ Ergonomic Assessments
+│  ├─ Program Reviews ⭐ NEW
+│  ├─ Training ⭐ NEW
+│  ├─ Workspace Design
+│  └─ Product Selection
+├─ INDUSTRIES ▼
+│  ├─ Overview
+│  ├─ Healthcare
+│  ├─ Government
+│  [etc...]
+├─ PRODUCTS &amp; PARTNERS ▼
+│  ├─ Overview
+│  ├─ Top Dozen ⭐ NEW
+│  ├─ Partner Brands ▼
+│  └─ Product Categories ▼
+├─ ABOUT ▼
+│  ├─ About WegoErgo
+│  ├─ Meet Michael
+│  └─ Service Area
+└─ CONTACT
+</code></pre>
+
+<hr />
+<h2>User Journey Mapping</h2>
+<h3>Journey 1: Business Owner Needs Assessment</h3>
+<pre class="codehilite"><code>HOME
+  ↓ (Click &quot;Schedule Assessment&quot;)
+CONTACT PAGE
+  ↓ (Fill form)
+CONFIRMATION
+</code></pre>
+
+<h3>Journey 2: Healthcare Facility Looking for Solutions</h3>
+<pre class="codehilite"><code>HOME
+  ↓ (Click &quot;Industries&quot; → &quot;Healthcare&quot;)
+HEALTHCARE PAGE
+  ↓ (View solutions, then &quot;View Products&quot;)
+PRODUCTS &amp; PARTNERS HUB
+  ↓ (Filter by healthcare, see OM Seating)
+OM SEATING PARTNER PAGE
+  ↓ (See specific chair, click)
+PRODUCT DETAIL PAGE
+  ↓ (Request Quote)
+CONTACT FORM
+</code></pre>
+
+<h3>Journey 3: Learning About WegoErgo</h3>
+<pre class="codehilite"><code>HOME
+  ↓ (Click &quot;Meet Michael&quot;)
+MEET MICHAEL PAGE
+  ↓ (Read credentials, then &quot;See Services&quot;)
+SERVICES OVERVIEW
+  ↓ (Click &quot;Ergonomic Assessments&quot;)
+ASSESSMENTS PAGE
+  ↓ (Convinced, click CTA)
+CONTACT FORM
+</code></pre>
+
+<h3>Journey 4: Product Researcher</h3>
+<pre class="codehilite"><code>HOME
+  ↓ (Click &quot;Products&quot;)
+PRODUCTS &amp; PARTNERS HUB
+  ↓ (Browse partner brands)
+PARTNER BRAND PAGE (e.g., OM Seating)
+  ↓ (See featured products)
+PRODUCT DETAIL PAGE
+  ↓ (Request consultation)
+CONTACT FORM
+</code></pre>
+
+<hr />
+<h2>Special Pages (Optional - Future Phase)</h2>
+<h3>Blog/Resources Section (Phase 5+)</h3>
+<pre class="codehilite"><code>BLOG
+├── Ergonomic Tips
+├── Product Spotlights
+├── Industry News
+└── Case Studies
+</code></pre>
+
+<h3>Additional Utility Pages</h3>
+<ul>
+<li>404 Error Page (custom)</li>
+<li>Thank You Page (after form submission)</li>
+<li>Privacy Policy</li>
+<li>Terms of Service</li>
+</ul>
+<hr />
+<h2>Squarespace Navigation Setup Instructions</h2>
+<ol>
+<li><strong>Create Folder Structure:</strong></li>
+<li>Services (Folder)</li>
+<li>Industries (Folder)</li>
+<li>Products &amp; Partners (Folder)</li>
+<li>
+<p>About (Folder)</p>
+</li>
+<li>
+<p><strong>Set Dropdown Behavior:</strong></p>
+</li>
+<li>Enable "Simple" dropdown menus</li>
+<li>First item in each folder = overview page</li>
+<li>
+<p>Hover reveals other pages</p>
+</li>
+<li>
+<p><strong>Mobile Menu:</strong></p>
+</li>
+<li>Enable accordion-style dropdowns</li>
+<li>
+<p>Collapsible sections for each main nav item</p>
+</li>
+<li>
+<p><strong>Footer:</strong></p>
+</li>
+<li>Create footer navigation with 4 columns</li>
+<li>Manually select most important links</li>
+<li>Add social media icons</li>
+<li>Include contact info</li>
+</ol>
+<hr />
+<h2>URL Structure Best Practices</h2>
+<h3>Keep URLs Clean &amp; SEO-Friendly:</h3>
+<p>✅ Good: <code>/industries/healthcare</code><br />
+✅ Good: <code>/products/partners/om-seating</code><br />
+✅ Good: <code>/services/ergonomic-assessments</code></p>
+<p>❌ Avoid: <code>/page-1</code><br />
+❌ Avoid: <code>/industries/healthcare-solutions-page</code><br />
+❌ Avoid: <code>/om-seating-commercial-ergonomic-furniture</code></p>
+<h3>Squarespace Auto-Generation:</h3>
+<ul>
+<li>Set custom URL slugs for each page</li>
+<li>Use hyphens, not underscores</li>
+<li>Keep URLs short but descriptive</li>
+<li>Match page titles when possible</li>
+</ul>
+<hr />
+<h2>Internal Linking Strategy</h2>
+<h3>Key Cross-Links to Include:</h3>
+<p><strong>From Homepage:</strong><br />
+- Link to all main sections<br />
+- Feature 3-4 top industries<br />
+- Highlight ergonomic assessments<br />
+- Showcase 2-3 top partners</p>
+<p><strong>From Service Pages:</strong><br />
+- Link to relevant industry pages<br />
+- Link to products that support the service<br />
+- Link to contact/assessment scheduling</p>
+<p><strong>From Industry Pages:</strong><br />
+- Link to relevant products<br />
+- Link to ergonomic assessments<br />
+- Link to partner brands common for that industry</p>
+<p><strong>From Product Pages:</strong><br />
+- Link to relevant industries<br />
+- Link to assessment services<br />
+- Cross-link to related products</p>
+<p><strong>From Partner Pages:</strong><br />
+- Link to product categories<br />
+- Link to industries that use these products<br />
+- Link to assessment services</p>
+<hr />
+<h2>Priority Build Order (Implementation)</h2>
+<h3>Week 1: Foundation</h3>
+<ol>
+<li>Homepage</li>
+<li>Contact page</li>
+<li>About WegoErgo</li>
+<li>Meet Michael</li>
+</ol>
+<h3>Week 2: Services</h3>
+<ol>
+<li>Services overview</li>
+<li>Ergonomic Assessments (priority #1)</li>
+<li>Ergonomic Program Reviews ⭐ NEW (priority #2)</li>
+<li>On-Site &amp; Virtual Training ⭐ NEW (priority #3)</li>
+<li>Workspace Design</li>
+<li>Product Selection</li>
+</ol>
+<h3>Week 3: Industries (Top 4)</h3>
+<ol>
+<li>Industries overview</li>
+<li>Healthcare</li>
+<li>Corporate &amp; Tech</li>
+<li>Education</li>
+<li>Small Business</li>
+</ol>
+<h3>Week 4: Products Foundation</h3>
+<ol>
+<li>Products &amp; Partners hub (with Top Dozen feature ⭐)</li>
+<li>Top Dozen Spotlight page ⭐ NEW</li>
+<li>OM Seating partner page</li>
+<li>LoneStar partner page</li>
+<li>Worksite International partner page ⭐ NEW (Education partner)</li>
+<li>Ergonomic Seating category</li>
+</ol>
+<h3>Week 5+: Expansion</h3>
+<ol>
+<li>Remaining industry pages</li>
+<li>Remaining partner pages</li>
+<li>Product category pages</li>
+<li>Top Dozen individual product pages (~12 products) ⭐</li>
+</ol>
+<hr />
+<p><strong>This sitemap gives you the complete navigation structure. Ready to move on to the detailed homepage wireframe?</strong></p>
+    </div>
+</body>
+</html>

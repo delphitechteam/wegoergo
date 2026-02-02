@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Requirements Quote</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2C5F7C;
+            border-bottom: 3px solid #E67E50;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2C5F7C;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2C5F7C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #2C5F7C;
+            font-weight: 600;
+        }
+
+        em {
+            color: #666;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #E67E50;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.5;
+            margin: 1.5em 0;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #f8f8f2;
+            font-size: 0.95em;
+        }
+
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin: 0.5em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #2C5F7C;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        blockquote {
+            border-left: 4px solid #E67E50;
+            margin: 1.5em 0;
+            padding: 0.5em 1.5em;
+            background: #f9f9f9;
+            font-style: italic;
+            color: #666;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 2em 0;
+        }
+
+        a {
+            color: #2C5F7C;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #2C5F7C;
+        }
+
+        .header-info {
+            background: #E8F4F8;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .header-info p {
+            margin: 0.5em 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            pre {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                max-width: 100%;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-info">
+            <p><strong>Document:</strong> Developer_Requirements_Quote</p>
+            <p><strong>Generated from:</strong> Developer_Requirements_Quote.md</p>
+            <p><strong>WegoErgo Website Redesign Project</strong></p>
+        </div>
+        <h1>Website Development Requirements - WegoErgo</h1>
+<p><strong>Complete Requirements Document for Developer Quote</strong></p>
+<hr />
+<h2>Project Overview</h2>
+<h3>Business</h3>
+<ul>
+<li><strong>Company:</strong> WegoErgo</li>
+<li><strong>Industry:</strong> Commercial ergonomic furniture and ergonomic assessments</li>
+<li><strong>Location:</strong> Livermore Valley, CA (serving Bay Area)</li>
+<li><strong>Target Audience:</strong> B2B (healthcare facilities, corporate offices, education, government, small businesses)</li>
+</ul>
+<h3>Project Goal</h3>
+<p>Complete website redesign and build on <strong>Squarespace</strong> platform. The site will position WegoErgo as an expert ergonomic consultant who represents top furniture manufacturers, NOT an ecommerce store.</p>
+<h3>Key Business Model</h3>
+<ul>
+<li>Professional ergonomic assessments, program reviews, and training (main services)</li>
+<li>Representing commercial furniture manufacturers (OM Seating, LoneStar, Workrite, etc.)</li>
+<li>Education partnership with Worksite International for training programs</li>
+<li>Curated "Top Dozen" product recommendations (NOT full catalog)</li>
+<li>Personalized fitting process to avoid costly returns</li>
+<li>NOT selling products directly online</li>
+<li>All conversions lead to consultation/quote requests</li>
+</ul>
+<hr />
+<h2>Platform &amp; Technical Requirements</h2>
+<h3>Platform</h3>
+<ul>
+<li><strong>Squarespace</strong> (client preference)</li>
+<li>Business Plan or higher (for advanced features)</li>
+<li>Custom domain: www.wegoergo.com</li>
+</ul>
+<h3>Technical Specifications</h3>
+<ul>
+<li><strong>Responsive design:</strong> Mobile, tablet, and desktop</li>
+<li><strong>Browser compatibility:</strong> Chrome, Safari, Firefox, Edge (latest versions)</li>
+<li><strong>Page load speed:</strong> Optimized images, under 3 seconds load time</li>
+<li><strong>SSL certificate:</strong> HTTPS required</li>
+<li><strong>SEO optimized:</strong> Meta tags, alt text, proper heading structure</li>
+<li><strong>Analytics:</strong> Google Analytics integration</li>
+<li><strong>Forms:</strong> Contact form with email notifications and auto-reply</li>
+</ul>
+<h3>Performance Requirements</h3>
+<ul>
+<li>Mobile-responsive on all pages</li>
+<li>Fast page loading (optimized images)</li>
+<li>Clean URL structure</li>
+<li>Proper heading hierarchy (H1, H2, H3)</li>
+<li>Image lazy loading where appropriate</li>
+</ul>
+<hr />
+<h2>Complete Page List</h2>
+<h3>Phase 1: Core Pages (Priority - Must Have)</h3>
+<p><strong>Total: 11 pages</strong> ⭐ (was 9)</p>
+<ol>
+<li><strong>Homepage</strong></li>
+<li><strong>Services Overview</strong></li>
+<li><strong>Ergonomic Assessments &amp; Program Reviews</strong> ⭐ (priority #1 service page)</li>
+<li><strong>Ergonomic Program Reviews</strong> ⭐ NEW (priority #2 service page)</li>
+<li><strong>On-Site &amp; Virtual Training</strong> ⭐ NEW (priority #3 service page)</li>
+<li><strong>Workspace Design</strong> (service page)</li>
+<li><strong>Product Selection &amp; Sourcing with Personalized Fitting</strong> (service page)</li>
+<li><strong>About WegoErgo</strong></li>
+<li><strong>Meet Michael</strong> (founder/ergonomist profile)</li>
+<li><strong>Service Area</strong> (Bay Area coverage)</li>
+<li><strong>Contact Page</strong> (with form)</li>
+</ol>
+<h3>Phase 2: Industry Pages (High Priority)</h3>
+<p><strong>Total: 9 pages</strong></p>
+<ol>
+<li><strong>Industries Overview</strong></li>
+<li><strong>Healthcare</strong></li>
+<li><strong>Government &amp; Public Sector</strong></li>
+<li><strong>Corporate &amp; Tech</strong></li>
+<li><strong>Education</strong></li>
+<li><strong>Lab &amp; Life Sciences</strong></li>
+<li><strong>Small Business</strong></li>
+<li><strong>Hospitality</strong></li>
+<li><strong>Outdoor Spaces</strong></li>
+</ol>
+<h3>Phase 3: Products &amp; Partners (High Priority)</h3>
+<p><strong>Total: 13 pages</strong> ⭐ (was 11)</p>
+<ol>
+<li><strong>Products &amp; Partners Hub</strong> (main landing page with Top Dozen feature)</li>
+<li><strong>Top Dozen Spotlight</strong> ⭐ NEW (Michael's curated product recommendations)</li>
+<li><strong>OM Seating</strong> (product partner page)</li>
+<li><strong>LoneStar Ergonomics</strong> (product partner page)</li>
+<li><strong>Workrite Ergonomics</strong> (product partner page)</li>
+<li><strong>Worksite International</strong> ⭐ NEW (education partner - training &amp; certification)</li>
+<li><strong>Partner 4</strong> (TBD - same template)</li>
+<li><strong>Partner 5</strong> (TBD - same template)</li>
+<li><strong>Partner 6</strong> (TBD - same template)</li>
+<li><strong>Ergonomic Seating</strong> (product category)</li>
+<li><strong>Desks &amp; Workstations</strong> (product category)</li>
+<li><strong>Ergonomic Accessories</strong> (product category)</li>
+<li><strong>Outdoor Furniture</strong> (product category)</li>
+</ol>
+<h3>Phase 4: Utility Pages (Required)</h3>
+<p><strong>Total: 3 pages</strong></p>
+<ol>
+<li><strong>Thank You Page</strong> (post-form submission)</li>
+<li><strong>Privacy Policy</strong></li>
+<li><strong>Terms of Service</strong></li>
+</ol>
+<hr />
+<h3>TOTAL PAGE COUNT: <strong>36 core pages</strong> ⭐ (was 32)</h3>
+<ul>
+<li>Phase 1: 11 pages (core/services)</li>
+<li>Phase 2: 9 pages (industries)</li>
+<li>Phase 3: 13 pages (products/partners)</li>
+<li>Phase 4: 3 pages (utility)</li>
+</ul>
+<p><strong>Key Changes from Original Scope:</strong><br />
+- Added 2 new service pages (Program Reviews, Training)<br />
+- Added Top Dozen Spotlight page<br />
+- Added Worksite International education partner page</p>
+<h3>Optional: Future Phase</h3>
+<ul>
+<li>Blog/Resources section (not included in initial quote)</li>
+<li>Individual product detail pages (not included in initial quote)</li>
+<li>404 Error Page (custom design)</li>
+</ul>
+<hr />
+<h2>Navigation Structure</h2>
+<h3>Desktop Navigation (Horizontal)</h3>
+<pre class="codehilite"><code>[LOGO] WegoErgo | SERVICES ▼ | INDUSTRIES ▼ | PRODUCTS ▼ | ABOUT ▼ | CONTACT
+</code></pre>
+
+<h3>Dropdown Menus</h3>
+<p><strong>SERVICES (Dropdown):</strong><br />
+- Services Overview<br />
+- Ergonomic Assessments (priority #1)<br />
+- Ergonomic Program Reviews ⭐ NEW (priority #2)<br />
+- On-Site &amp; Virtual Training ⭐ NEW (priority #3)<br />
+- Workspace Design<br />
+- Product Selection &amp; Personalized Fitting</p>
+<p><strong>INDUSTRIES (Dropdown):</strong><br />
+- Industries Overview<br />
+- Healthcare<br />
+- Government &amp; Public Sector<br />
+- Corporate &amp; Tech<br />
+- Education<br />
+- Lab &amp; Life Sciences<br />
+- Small Business<br />
+- Hospitality<br />
+- Outdoor Spaces</p>
+<p><strong>PRODUCTS &amp; PARTNERS (Dropdown):</strong><br />
+- Products &amp; Partners Hub<br />
+- Top Dozen Spotlight ⭐ NEW<br />
+- (Divider)<br />
+- Product Partner Brands:<br />
+  - OM Seating<br />
+  - LoneStar Ergonomics<br />
+  - Workrite Ergonomics<br />
+  - [Additional partners]<br />
+- (Divider)<br />
+- Education Partners:<br />
+  - Worksite International ⭐ NEW<br />
+- (Divider)<br />
+- Product Categories:<br />
+  - Ergonomic Seating<br />
+  - Desks &amp; Workstations<br />
+  - Ergonomic Accessories<br />
+  - Outdoor Furniture</p>
+<p><strong>ABOUT (Dropdown):</strong><br />
+- About WegoErgo<br />
+- Meet Michael<br />
+- Service Area</p>
+<p><strong>CONTACT (Single Page):</strong><br />
+- No dropdown - direct link</p>
+<h3>Mobile Navigation</h3>
+<ul>
+<li>Hamburger menu</li>
+<li>Accordion-style dropdowns</li>
+<li>Collapsible sections</li>
+</ul>
+<h3>Footer Navigation</h3>
+<ul>
+<li>4-column layout</li>
+<li>Columns: Services (include all 6 services), Company, Industries, Contact</li>
+<li>Social media icons</li>
+<li>Copyright notice</li>
+<li>Services column should include: Assessments, Program Reviews, Training, Workspace Design, Product Selection</li>
+</ul>
+<hr />
+<h2>Design Requirements</h2>
+<h3>Branding &amp; Style</h3>
+<p><strong>Color Palette:</strong><br />
+- <strong>Primary Brand Color:</strong> #2C5F7C (deep blue) - or client to provide<br />
+- <strong>CTA/Accent Color:</strong> #E67E50 (warm orange) - or client to provide<br />
+- <strong>Text Dark:</strong> #333333<br />
+- <strong>Text Light/Gray:</strong> #666666<br />
+- <strong>Background Light:</strong> #F5F5F5<br />
+- <strong>White:</strong> #FFFFFF</p>
+<p><strong>Typography:</strong><br />
+- <strong>Headers:</strong> Bold, modern sans-serif (Montserrat, Poppins, or similar)<br />
+  - H1: 48px desktop / 32px mobile<br />
+  - H2: 36px desktop / 28px mobile<br />
+  - H3: 24px desktop / 20px mobile<br />
+- <strong>Body Text:</strong> Clean, readable sans-serif (Inter, Open Sans, or similar)<br />
+  - 18px desktop / 16px mobile<br />
+- <strong>Links:</strong> Semi-bold, blue (#2C5F7C), underline on hover</p>
+<p><strong>Design Style:</strong><br />
+- Clean, professional, modern<br />
+- Lots of white space<br />
+- Clear visual hierarchy<br />
+- NOT overly corporate - approachable<br />
+- Healthcare/wellness-focused aesthetic</p>
+<h3>Layout Specifications</h3>
+<ul>
+<li><strong>Max content width:</strong> 1200px (centered)</li>
+<li><strong>Section padding:</strong> 80px top/bottom (desktop), 40px (mobile)</li>
+<li><strong>Grid system:</strong> Squarespace's built-in grid</li>
+<li><strong>Breakpoints:</strong> Desktop (1200px+), Tablet (768-1199px), Mobile (below 768px)</li>
+</ul>
+<hr />
+<h2>Content Provided by Client</h2>
+<p><strong>Client WILL provide:</strong><br />
+1. ✅ <strong>All written content</strong> - Copy for every page (detailed in separate documents)<br />
+2. ✅ <strong>Complete wireframes</strong> - Layout and structure for each page<br />
+3. ✅ <strong>Logo files</strong> - WegoErgo logo (high-res PNG and SVG)<br />
+4. ✅ <strong>Partner logos</strong> - All partner brand logos (high-res)<br />
+5. ✅ <strong>Some photography</strong> - Photos of Michael (founder), office/workspace images<br />
+6. ✅ <strong>Brand colors</strong> - Final color palette<br />
+7. ✅ <strong>Content structure</strong> - Exact headlines, body text, CTAs for all pages</p>
+<p><strong>Developer WILL need to:</strong><br />
+1. Source stock photography where client photos aren't available (with client approval)<br />
+2. Optimize all images for web<br />
+3. Select appropriate icons (consistent style throughout)<br />
+4. Implement responsive layouts<br />
+5. Set up forms and integrations</p>
+<hr />
+<h2>Functionality Requirements</h2>
+<h3>Forms</h3>
+<p><strong>Contact Form (on Contact Page):</strong><br />
+- Fields required:<br />
+  - First Name<em> (text input)<br />
+  - Last Name</em> (text input)<br />
+  - Email Address<em> (email input with validation)<br />
+  - Phone Number</em> (tel input)<br />
+  - Company Name (text input - optional)<br />
+  - Industry<em> (dropdown - 9 options provided)<br />
+  - I'm Interested In</em> (dropdown - 5 options provided)<br />
+  - Tell Us About Your Project<em> (textarea, min 20 characters)<br />
+  - How Did You Hear About Us? (dropdown - optional)<br />
+  - Newsletter opt-in (checkbox - optional)<br />
+- </em><em>Form validation:</em><em> Client-side validation with error messages<br />
+- </em><em>Spam protection:</em><em> Honeypot field (hidden) or Squarespace reCAPTCHA<br />
+- </em><em>Email notifications:</em><em><br />
+  - Admin notification to: info@wegoergo.com (or client email)<br />
+  - Auto-reply to user with confirmation<br />
+- </em><em>Success state:</em><em><br />
+  - Option 1: Inline success message (preferred)<br />
+  - Option 2: Redirect to Thank You page<br />
+- </em><em>Mobile optimization:</em>* Full-width fields, large tap targets</p>
+<p><strong>Other Forms:</strong><br />
+- Quick contact forms on partner pages (pre-filled with partner name)<br />
+- Quote request buttons linking to main contact form</p>
+<h3>Call-to-Action (CTA) Buttons</h3>
+<p><strong>Primary CTA:</strong><br />
+- Text: "Schedule Free Consultation"<br />
+- Style: Solid background (orange #E67E50), white text, bold<br />
+- Links to: Contact page<br />
+- Appears on: Every page (hero section, final CTA section)</p>
+<p><strong>Secondary CTA:</strong><br />
+- Style: Outline (border only), blue text<br />
+- Various text depending on context<br />
+- Examples: "Explore Our Services", "Learn More", "Request Quote"</p>
+<p><strong>Button Specifications:</strong><br />
+- Desktop: 14px vertical padding, 28px horizontal padding<br />
+- Mobile: Full width, 44px minimum height (thumb-friendly)<br />
+- Border radius: 6px<br />
+- Hover effect: Darken 10%, lift 2px<br />
+- Transition: 0.3s ease</p>
+<h3>Interactive Elements</h3>
+<p><strong>Image Galleries:</strong><br />
+- Product images on partner pages<br />
+- Hover effects: Zoom 105%, slight brightness increase<br />
+- Clickable to larger view (optional)</p>
+<p><strong>Card Hover Effects:</strong><br />
+- Industry cards, partner cards, service cards<br />
+- Hover: Lift 5px, shadow increases<br />
+- Transition: 0.3s ease</p>
+<p><strong>Navigation:</strong><br />
+- Sticky header (stays visible on scroll)<br />
+- Smooth scroll to anchor links<br />
+- Active page highlighted in navigation</p>
+<p><strong>Mobile:</strong><br />
+- Sticky CTA button at bottom after scroll (dismissible)<br />
+- Hamburger menu with smooth animation<br />
+- Swipeable galleries (if applicable)</p>
+<h3>Integrations</h3>
+<p><strong>Required:</strong><br />
+- Google Analytics tracking code<br />
+- Facebook Pixel (if client provides)<br />
+- Email notifications (Squarespace built-in)</p>
+<p><strong>Optional (client to decide):</strong><br />
+- Newsletter signup integration (Mailchimp, ConvertKit, etc.)<br />
+- Calendar booking integration (Calendly or similar)<br />
+- Live chat widget (if client requests)</p>
+<hr />
+<h2>Image Requirements</h2>
+<h3>Images Needed</h3>
+<p><strong>Client to provide where possible, developer to source stock images for:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Page Section</th>
+<th>Quantity</th>
+<th>Size (Desktop)</th>
+<th>Size (Mobile)</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage Hero</td>
+<td>1</td>
+<td>1200x800px</td>
+<td>375x250px</td>
+<td>Michael or office</td>
+</tr>
+<tr>
+<td>Homepage Industries</td>
+<td>8</td>
+<td>300x200px</td>
+<td>180x180px</td>
+<td>Industry settings</td>
+</tr>
+<tr>
+<td>Homepage Michael Photo</td>
+<td>1</td>
+<td>600x600px</td>
+<td>375x375px</td>
+<td>Headshot</td>
+</tr>
+<tr>
+<td>Partner Logos</td>
+<td>6-8</td>
+<td>200x100px</td>
+<td>150x75px</td>
+<td>PNG/SVG</td>
+</tr>
+<tr>
+<td>Partner Hero Images</td>
+<td>6</td>
+<td>1920x500px</td>
+<td>375x250px</td>
+<td>Product in setting</td>
+</tr>
+<tr>
+<td>Partner Product Photos</td>
+<td>6-8 per partner</td>
+<td>400x400px</td>
+<td>375x375px</td>
+<td>White background</td>
+</tr>
+<tr>
+<td>Industry Hero Images</td>
+<td>8</td>
+<td>1920x500px</td>
+<td>375x250px</td>
+<td>Industry settings</td>
+</tr>
+<tr>
+<td>Service Page Images</td>
+<td>3-4 per page</td>
+<td>600x400px</td>
+<td>375x250px</td>
+<td>Service visuals</td>
+</tr>
+<tr>
+<td>Icons</td>
+<td>~30 total</td>
+<td>64x64px</td>
+<td>48x48px</td>
+<td>SVG preferred</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Image Optimization:</strong><br />
+- All images compressed for web (TinyPNG or similar)<br />
+- WebP format where supported<br />
+- Appropriate alt text for all images (SEO)<br />
+- Lazy loading on images below the fold</p>
+<hr />
+<h2>SEO Requirements</h2>
+<h3>On-Page SEO (Developer Responsibility)</h3>
+<p><strong>For Every Page:</strong><br />
+- ✅ Unique page title (60 characters max)<br />
+- ✅ Meta description (155-160 characters)<br />
+- ✅ H1 tag (one per page, includes primary keyword)<br />
+- ✅ H2-H6 tags (proper hierarchy)<br />
+- ✅ Alt text for all images<br />
+- ✅ Clean URL slugs (e.g., <code>/services/ergonomic-assessments</code>)<br />
+- ✅ Internal linking (pages link to relevant other pages)</p>
+<p><strong>Technical SEO:</strong><br />
+- ✅ XML sitemap (Squarespace auto-generates)<br />
+- ✅ Robots.txt properly configured<br />
+- ✅ SSL certificate installed<br />
+- ✅ Mobile-friendly (responsive design)<br />
+- ✅ Fast loading (optimized images, clean code)<br />
+- ✅ Schema markup for business (optional but recommended)</p>
+<p><strong>Content to be SEO-optimized (client provides keywords):</strong><br />
+- Homepage<br />
+- Service pages (especially Ergonomic Assessments)<br />
+- Industry pages<br />
+- Products &amp; Partners hub</p>
+<hr />
+<h2>Browser &amp; Device Testing</h2>
+<p><strong>Required Testing:</strong><br />
+- Desktop browsers: Chrome, Safari, Firefox, Edge (latest versions)<br />
+- Mobile devices: iOS Safari, Android Chrome<br />
+- Tablet: iPad (Safari), Android tablets<br />
+- Responsive breakpoints: 1920px, 1440px, 1200px, 768px, 375px</p>
+<p><strong>Testing Checklist:</strong><br />
+- All pages load correctly<br />
+- All links work (no 404s)<br />
+- Forms submit successfully<br />
+- Images display properly<br />
+- Navigation works on all devices<br />
+- CTAs are clickable and functional<br />
+- Mobile tap targets are adequate (44x44px minimum)<br />
+- Text is readable without zooming<br />
+- No horizontal scrolling on mobile</p>
+<hr />
+<h2>Timeline &amp; Milestones</h2>
+<p><strong>Suggested Timeline (Developer to confirm):</strong></p>
+<p><strong>Week 1-2: Setup &amp; Core Pages</strong><br />
+- Squarespace setup<br />
+- Design system implementation (colors, fonts, buttons)<br />
+- Homepage build<br />
+- Contact page + form setup<br />
+- About pages (About WegoErgo, Meet Michael)</p>
+<p><strong>Week 3: Services &amp; Industries</strong><br />
+- Services pages (4 pages)<br />
+- Industry pages (9 pages)</p>
+<p><strong>Week 4: Products &amp; Partners</strong><br />
+- Products &amp; Partners hub<br />
+- Partner brand pages (6 pages)<br />
+- Product category pages (4 pages)</p>
+<p><strong>Week 5: Testing &amp; Launch</strong><br />
+- Complete all utility pages<br />
+- Cross-browser testing<br />
+- Mobile optimization<br />
+- SEO implementation<br />
+- Client review &amp; revisions<br />
+- Launch</p>
+<p><strong>Total Estimated Timeline: 4-5 weeks</strong><br />
+(Developer to provide accurate timeline based on scope)</p>
+<hr />
+<h2>Deliverables Expected</h2>
+<h3>From Developer:</h3>
+<p><strong>1. Fully Functional Website:</strong><br />
+- All 32 pages built and live on Squarespace<br />
+- Fully responsive (mobile, tablet, desktop)<br />
+- All forms functional with email notifications<br />
+- Navigation working correctly</p>
+<p><strong>2. Design Implementation:</strong><br />
+- Custom CSS/styling to match wireframes and design specs<br />
+- Consistent branding throughout<br />
+- Professional, polished appearance</p>
+<p><strong>3. SEO Setup:</strong><br />
+- Page titles and meta descriptions<br />
+- Image alt text<br />
+- Proper heading structure<br />
+- Clean URL structure</p>
+<p><strong>4. Testing Documentation:</strong><br />
+- Confirmation of browser/device testing<br />
+- Any known issues documented</p>
+<p><strong>5. Training/Handoff:</strong><br />
+- Brief guide on how to edit content in Squarespace<br />
+- How to access form submissions<br />
+- How to add new pages using templates</p>
+<p><strong>6. Post-Launch:</strong><br />
+- 30-day bug fix period (minor adjustments)<br />
+- Support for any issues discovered after launch</p>
+<hr />
+<h2>Content &amp; Assets Provided to Developer</h2>
+<p><strong>Client will provide in organized folders:</strong></p>
+<h3>1. Written Content (Provided)</h3>
+<ul>
+<li>✅ Complete copy for all 32 pages (in markdown/Word docs)</li>
+<li>✅ CTA button text variations</li>
+<li>✅ Form field labels and options</li>
+<li>✅ Footer text</li>
+<li>✅ Navigation labels</li>
+</ul>
+<h3>2. Design Assets (Provided)</h3>
+<ul>
+<li>✅ Wireframes for all major pages (Homepage, Partner Page, Products Hub)</li>
+<li>✅ Logo files (PNG, SVG)</li>
+<li>✅ Brand color codes</li>
+<li>✅ Font preferences</li>
+</ul>
+<h3>3. Images (Partial - Developer to supplement)</h3>
+<ul>
+<li>Photos of Michael (founder)</li>
+<li>Partner logos (provided by client or developer sources from partner websites)</li>
+<li>Some product photos (if available)</li>
+<li>Developer to source: Stock photos for industries, generic furniture images</li>
+</ul>
+<h3>4. Additional Documents</h3>
+<ul>
+<li>✅ Master strategy document</li>
+<li>✅ Complete sitemap</li>
+<li>✅ Full content for all pages</li>
+<li>✅ Form specifications</li>
+</ul>
+<hr />
+<h2>Budget Considerations</h2>
+<p><strong>What affects the quote:</strong></p>
+<p><strong>Included in Scope:</strong><br />
+- 32 pages (as listed above)<br />
+- Responsive design (mobile + desktop)<br />
+- Contact form with validation and email notifications<br />
+- Basic SEO setup (page titles, meta descriptions, alt text)<br />
+- Browser testing<br />
+- One round of revisions</p>
+<p><strong>Not Included (Additional Cost):</strong><br />
+- Squarespace subscription (client pays directly)<br />
+- Domain registration/transfer<br />
+- Logo design (client has logo)<br />
+- Professional photography (client provides or developer sources stock)<br />
+- Custom illustrations<br />
+- Advanced animations/interactions<br />
+- Blog setup (future phase)<br />
+- Ongoing maintenance after 30-day warranty<br />
+- E-commerce functionality (not needed for this project)<br />
+- Custom coding beyond Squarespace capabilities</p>
+<p><strong>Developer Should Quote Separately:</strong><br />
+- Stock photo licensing (if needed beyond free resources)<br />
+- Premium Squarespace plugins/integrations<br />
+- Copywriting (client provides all copy)<br />
+- Additional revisions beyond one round</p>
+<hr />
+<h2>Questions for Developer to Answer in Quote</h2>
+<p><strong>Please provide:</strong></p>
+<ol>
+<li><strong>Total project cost:</strong> Fixed price or hourly rate?</li>
+<li><strong>Timeline:</strong> How many weeks for completion?</li>
+<li><strong>Revision policy:</strong> How many rounds of revisions included?</li>
+<li><strong>Stock images:</strong> Do you source/license these? Cost?</li>
+<li><strong>Testing:</strong> What browsers/devices will you test on?</li>
+<li><strong>Post-launch support:</strong> What's included in the 30 days?</li>
+<li><strong>Additional costs:</strong> Any fees beyond base price?</li>
+<li><strong>Payment structure:</strong> Deposit, milestones, final payment?</li>
+<li><strong>Squarespace experience:</strong> Portfolio examples of Squarespace sites?</li>
+<li><strong>Form setup:</strong> Experience with Squarespace forms + email integration?</li>
+</ol>
+<hr />
+<h2>Key Success Criteria</h2>
+<p><strong>The website will be considered successful when:</strong></p>
+<ol>
+<li>✅ All 32 pages are live and functional</li>
+<li>✅ Mobile-responsive on all devices</li>
+<li>✅ Contact form works (submissions received, emails sent)</li>
+<li>✅ Navigation is intuitive and error-free</li>
+<li>✅ All images optimized and loading quickly</li>
+<li>✅ SEO basics implemented (titles, descriptions, alt text)</li>
+<li>✅ Design matches wireframes and brand guidelines</li>
+<li>✅ All CTAs link correctly</li>
+<li>✅ Cross-browser compatible</li>
+<li>✅ Client can easily update content after handoff</li>
+</ol>
+<hr />
+<h2>Important Notes for Developer</h2>
+<h3>Strategic Positioning</h3>
+<ul>
+<li>This is <strong>NOT an ecommerce site</strong> - no shopping cart, no "buy now" buttons</li>
+<li>All product pages have "Request Quote" or "Schedule Consultation" CTAs</li>
+<li>Goal is to drive visitors to contact/consultation, not online purchases</li>
+<li>Emphasis on expertise and consultation over product catalog</li>
+</ul>
+<h3>Template Reusability</h3>
+<ul>
+<li><strong>Industry pages</strong> all follow same template (8 pages, same structure)</li>
+<li><strong>Partner pages</strong> all follow same template (6 pages, same structure)</li>
+<li><strong>Product category pages</strong> similar structure (4 pages)</li>
+<li>Developer can create templates and duplicate with content swap</li>
+</ul>
+<h3>Content Complexity</h3>
+<ul>
+<li>Long-form content on many pages (lots of text)</li>
+<li>Multiple sections per page (6-10 sections typical)</li>
+<li>Heavy use of cards, grids, and multi-column layouts</li>
+<li>Many images per page</li>
+</ul>
+<h3>Forms Critical</h3>
+<ul>
+<li>Contact form is the PRIMARY conversion point</li>
+<li>Must work flawlessly on mobile and desktop</li>
+<li>Email notifications are essential</li>
+<li>Spam protection required</li>
+</ul>
+<hr />
+<h2>Contact Information</h2>
+<p><strong>Client Contact:</strong><br />
+- Name: [Your Name]<br />
+- Email: [Your Email]<br />
+- Phone: [Your Phone]<br />
+- Availability: [Your availability for calls/meetings]</p>
+<p><strong>Questions Before Quoting:</strong><br />
+Please email any clarification questions before submitting your quote.</p>
+<hr />
+<h2>Appendix: Reference Documents</h2>
+<p><strong>Attached/Available:</strong><br />
+1. ✅ Master Website Redesign Strategy (complete overview)<br />
+2. ✅ Visual Sitemap (full site structure)<br />
+3. ✅ Homepage Complete Copy (full content)<br />
+4. ✅ Homepage Wireframe (visual layout)<br />
+5. ✅ Partner Page Template (OM Seating example)<br />
+6. ✅ Partner Page Wireframe<br />
+7. ✅ Products &amp; Partners Hub Copy<br />
+8. ✅ Products Hub Wireframe<br />
+9. ✅ Healthcare Industry Page (full content)<br />
+10. ✅ CTA Button Copy Variations<br />
+11. ✅ Contact Form Specifications<br />
+12. ✅ Implementation Guide</p>
+<p><strong>Total documentation provided: 12 comprehensive documents</strong></p>
+<hr />
+<h2>Summary for Quick Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Platform</strong></td>
+<td>Squarespace</td>
+</tr>
+<tr>
+<td><strong>Total Pages</strong></td>
+<td>32 core pages</td>
+</tr>
+<tr>
+<td><strong>Timeline</strong></td>
+<td>4-5 weeks (estimated)</td>
+</tr>
+<tr>
+<td><strong>Content</strong></td>
+<td>Fully provided by client</td>
+</tr>
+<tr>
+<td><strong>Design</strong></td>
+<td>Wireframes + specs provided</td>
+</tr>
+<tr>
+<td><strong>Key Functionality</strong></td>
+<td>Contact form, responsive design, SEO</td>
+</tr>
+<tr>
+<td><strong>NOT Included</strong></td>
+<td>Ecommerce, blog, ongoing maintenance</td>
+</tr>
+<tr>
+<td><strong>Success Metric</strong></td>
+<td>Fully functional, mobile-responsive site that drives consultations</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Ready for Quote Submission</strong></p>
+<p>Please review all attached documents and provide a detailed quote including:<br />
+- Total cost<br />
+- Timeline<br />
+- Payment structure<br />
+- What's included/excluded<br />
+- Any questions or clarifications needed</p>
+<p>Thank you!</p>
+<hr />
+<p><strong>Document Version:</strong> 1.0<br />
+<strong>Date:</strong> January 2026<br />
+<strong>Project:</strong> WegoErgo Website Redesign</p>
+    </div>
+</body>
+</html>

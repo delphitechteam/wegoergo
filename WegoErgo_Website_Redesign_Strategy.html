@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wegoergo Website Redesign Strategy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2C5F7C;
+            border-bottom: 3px solid #E67E50;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2C5F7C;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2C5F7C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #2C5F7C;
+            font-weight: 600;
+        }
+
+        em {
+            color: #666;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #E67E50;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.5;
+            margin: 1.5em 0;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #f8f8f2;
+            font-size: 0.95em;
+        }
+
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin: 0.5em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #2C5F7C;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        blockquote {
+            border-left: 4px solid #E67E50;
+            margin: 1.5em 0;
+            padding: 0.5em 1.5em;
+            background: #f9f9f9;
+            font-style: italic;
+            color: #666;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 2em 0;
+        }
+
+        a {
+            color: #2C5F7C;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #2C5F7C;
+        }
+
+        .header-info {
+            background: #E8F4F8;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .header-info p {
+            margin: 0.5em 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            pre {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                max-width: 100%;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-info">
+            <p><strong>Document:</strong> WegoErgo_Website_Redesign_Strategy</p>
+            <p><strong>Generated from:</strong> WegoErgo_Website_Redesign_Strategy.md</p>
+            <p><strong>WegoErgo Website Redesign Project</strong></p>
+        </div>
+        <h1>WegoErgo Website Redesign Strategy</h1>
+<p><strong>Complete Redesign for Squarespace Implementation</strong></p>
+<hr />
+<h2>Executive Summary</h2>
+<h3>Current Problems Identified</h3>
+<ol>
+<li><strong>Confusing Navigation</strong> - Terms like "SANDBOX", "VIRTUAL SHOWROOMS", "MORE" don't communicate clear value</li>
+<li><strong>Unclear Value Proposition</strong> - Visitors don't immediately understand what WegoErgo does</li>
+<li><strong>Partner Confusion</strong> - No clear strategy for showcasing furniture partners without being an ecommerce site</li>
+<li><strong>Poor Conversion Path</strong> - No clear journey from visitor to lead</li>
+<li><strong>Overwhelming Structure</strong> - Too many menu items and unclear hierarchy</li>
+<li><strong>Lack of Clarity</strong> - Business model (assessments + furniture representation) is not clearly communicated</li>
+</ol>
+<h3>Core Business Model</h3>
+<p>WegoErgo operates on a <strong>dual-service model</strong>:<br />
+1. <strong>Professional Services</strong>: Certified ergonomic assessments, program reviews, and on-site/virtual training<br />
+2. <strong>Product Representation</strong>: Representing top commercial furniture manufacturers (OM Seating, LoneStar Ergonomics, Workrite, etc.) plus education partnerships (Worksite International)</p>
+<p><strong>Key Differentiator</strong>: Personalized fitting process ensures clients get equipment that meets neutral posture specifications, avoiding costly returns and aggravation. Focus on curated "Top Dozen" recommendations, not full catalog.</p>
+<p><strong>Important</strong>: NOT an ecommerce site. Works with dealers, designers, and installers for turnkey solutions.</p>
+<hr />
+<h2>Strategic Positioning</h2>
+<h3>Clear Value Proposition</h3>
+<p><strong>"Expert Ergonomic Assessments + Access to Top Commercial Furniture Brands"</strong></p>
+<p>WegoErgo is the bridge between businesses needing ergonomic solutions and the best furniture manufacturers in the industry. Michael's expertise ensures clients get the right solutions, not just products.</p>
+<h3>Target Audience</h3>
+<ul>
+<li>Healthcare facilities</li>
+<li>Government agencies</li>
+<li>Corporate offices (especially Bay Area tech)</li>
+<li>Educational institutions</li>
+<li>Small businesses</li>
+<li>Hospitality businesses</li>
+<li>Lab &amp; life science facilities</li>
+</ul>
+<hr />
+<h2>New Site Structure &amp; Navigation</h2>
+<h3>Simplified Navigation (5-6 main items max)</h3>
+<pre class="codehilite"><code>┌─────────────────────────────────────────────────────────┐
+│  LOGO  |  Services  |  Industries  |  Products  |  About  |  Contact  │
+└─────────────────────────────────────────────────────────┘
+</code></pre>
+
+<p><strong>1. Services</strong> (Dropdown)<br />
+   - Ergonomic Assessments (priority #1)<br />
+   - Ergonomic Program Reviews (NEW - priority #2)<br />
+   - On-Site &amp; Virtual Training (NEW - priority #3)<br />
+   - Workspace Design<br />
+   - Product Selection &amp; Sourcing with Personalized Fitting</p>
+<p><strong>2. Industries We Serve</strong> (Dropdown)<br />
+   - Healthcare<br />
+   - Government &amp; Public Sector<br />
+   - Corporate &amp; Tech<br />
+   - Education<br />
+   - Lab &amp; Life Sciences<br />
+   - Small Business<br />
+   - Hospitality<br />
+   - Outdoor Spaces</p>
+<p><strong>3. Products &amp; Partners</strong> (New strategic page)<br />
+   - Top Dozen Spotlight (NEW - Michael's most recommended products)<br />
+   - Our Product Partner Brands<br />
+   - Education Partners (Worksite International)<br />
+   - Ergonomic Seating<br />
+   - Desks &amp; Workstations<br />
+   - Ergonomic Accessories<br />
+   - Outdoor Furniture</p>
+<p><strong>4. About</strong><br />
+   - Meet Michael<br />
+   - Why WegoErgo<br />
+   - Service Area (Bay Area focus)</p>
+<p><strong>5. Contact / Get Assessment</strong></p>
+<hr />
+<h2>Solving the Partner Problem</h2>
+<h3>The Strategic Solution</h3>
+<p><strong>Create a "Products &amp; Partners" section that positions WegoErgo as the curator/expert, not a catalog.</strong></p>
+<h4>Approach:</h4>
+<ol>
+<li><strong>Lead with expertise, not products</strong></li>
+<li>"We partner with the industry's leading manufacturers to bring you the best ergonomic solutions"</li>
+<li>
+<p>Emphasize Michael's role in selecting the RIGHT products for each client</p>
+</li>
+<li>
+<p><strong>Partner Brand Pages</strong> (instead of external links)</p>
+</li>
+<li>Create beautiful brand partner pages on YOUR site</li>
+<li>Showcase each partner's strengths</li>
+<li>Feature select products with compelling imagery</li>
+<li>CTA: "Schedule Assessment" or "Request Quote" (NOT "Buy Now")</li>
+<li>
+<p>Optional: "Visit [Brand] Website" as secondary action</p>
+</li>
+<li>
+<p><strong>Product Categories</strong> (not ecommerce)</p>
+</li>
+<li>Show products organized by type (seating, desks, accessories)</li>
+<li>
+<p>Each product has:</p>
+<ul>
+<li>Beautiful image</li>
+<li>Key features</li>
+<li>"Why Michael recommends this"</li>
+<li>CTA: "Discuss this solution" or "Include in my assessment"</li>
+</ul>
+</li>
+<li>
+<p><strong>No Pricing</strong> (creates conversion opportunity)</p>
+</li>
+<li>"Contact us for pricing and delivery"</li>
+<li>Positions you as B2B consultant, not retailer</li>
+<li>Forces conversation = better conversion</li>
+</ol>
+<h3>Example Partner Page Structure</h3>
+<pre class="codehilite"><code>┌──────────────────────────────────────────┐
+│   OM SEATING - PREMIUM ERGONOMIC CHAIRS  │
+│                                          │
+│   [Hero Image]                           │
+│                                          │
+│   WegoErgo proudly represents OM Seating,│
+│   a leader in commercial ergonomic       │
+│   seating for healthcare, corporate,     │
+│   and education environments...          │
+│                                          │
+│   [3-4 Featured Products with Images]   │
+│   [Contact for Pricing CTA]              │
+│   [Optional: Visit OM Seating Website]   │
+└──────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h2>The "Top Dozen" Product Strategy</h2>
+<h3>Curated Over Comprehensive</h3>
+<p><strong>Problem</strong>: Trying to showcase every product from every manufacturer creates an overwhelming catalog that doesn't serve the client's needs.</p>
+<p><strong>Solution</strong>: Feature a curated "Top Dozen" (~12 products) that Michael recommends most often.</p>
+<h4>Benefits:</h4>
+<ol>
+<li><strong>Manageable</strong>: Easier to maintain and update</li>
+<li><strong>Focused</strong>: Highlights best-in-class solutions</li>
+<li><strong>Expert positioning</strong>: "These are MY top recommendations"</li>
+<li><strong>Reduces decision fatigue</strong>: Clients aren't overwhelmed</li>
+<li><strong>Personalization hook</strong>: "Don't see what you need? Let's discuss your specific situation"</li>
+</ol>
+<h4>Implementation:</h4>
+<ul>
+<li>Create dedicated "Top Dozen Spotlight" page</li>
+<li>Feature these products prominently on category pages</li>
+<li>Each product gets detailed writeup with Michael's recommendation</li>
+<li>Include: Why he recommends it, ideal use cases, key specifications</li>
+<li>CTA: "Request personalized fitting consultation"</li>
+</ul>
+<h3>Worksite International Partnership</h3>
+<p><strong>Different from product partners</strong> - Worksite International is a <strong>schooling/education partner</strong>, not a furniture manufacturer.</p>
+<h4>Strategy:</h4>
+<ul>
+<li>Separate section or page explaining this partnership</li>
+<li>Position as: "Continuing education and training partner"</li>
+<li>Services offered through this partnership:</li>
+<li>On-site ergonomic training</li>
+<li>Virtual training sessions</li>
+<li>Certification programs for clients</li>
+<li>Ongoing education resources</li>
+<li>Link to training services page</li>
+<li>Distinct visual treatment from product partners</li>
+</ul>
+<hr />
+<h2>Page-by-Page Redesign</h2>
+<h3>🏠 HOMEPAGE</h3>
+<p><strong>Purpose</strong>: Immediately clarify what WegoErgo does and drive visitors to conversion</p>
+<h4>Structure:</h4>
+<p><strong>Hero Section</strong><br />
+- Headline: "Create Healthier, More Productive Workspaces"<br />
+- Subheadline: "Expert ergonomic assessments + curated commercial furniture solutions for Bay Area businesses"<br />
+- CTA 1: "Schedule Free Consultation" (Primary)<br />
+- CTA 2: "Explore Solutions" (Secondary)<br />
+- Hero Image: Michael conducting assessment OR beautiful office space</p>
+<p><strong>Section 2: What We Do (3 Cards)</strong></p>
+<pre class="codehilite"><code>┌─────────────────────────────────────────────────┐
+│  [Icon]              [Icon]           [Icon]    │
+│  ASSESS              DESIGN            SOURCE   │
+│  Certified           Custom            Access   │
+│  ergonomic           workspace         to top   │
+│  assessments         layouts           brands   │
+│  [Learn More]        [Learn More]      [Learn More] │
+└─────────────────────────────────────────────────┘
+</code></pre>
+
+<p><strong>Section 3: Industries We Serve</strong><br />
+- Visual grid with 6-8 industries<br />
+- Each clickable to industry page<br />
+- Images + labels</p>
+<p><strong>Section 4: Why WegoErgo</strong><br />
+- 4 key differentiators:<br />
+  1. "Personalized Fitting That Actually Works" - Expert fitting process ensures equipment meets neutral posture specs<br />
+  2. "Avoid Costly Returns &amp; Aggravation" - Get it right the first time, save money and frustration<br />
+  3. "Measurable Financial Gain" - Real ROI through reduced injuries (60%), improved productivity (15-25%), lower insurance costs<br />
+  4. "Certified Expertise with Local Focus" - COESp, CRESp, CUSP, CRM certifications serving Bay Area businesses</p>
+<p><strong>Section 5: Featured Partners</strong><br />
+- Logos of 4-6 top partners (OM Seating, LoneStar, Workrite, etc.)<br />
+- Text: "We represent the industry's leading manufacturers"<br />
+- CTA: "View All Partners"</p>
+<p><strong>Section 6: About Michael (Mini)</strong><br />
+- Photo + brief intro<br />
+- Credentials<br />
+- CTA: "Meet Michael"</p>
+<p><strong>Section 7: Service Area</strong><br />
+- "Proudly serving the greater Bay Area from our Livermore Valley base"<br />
+- Map or region visual</p>
+<p><strong>Final CTA Section</strong><br />
+- "Ready to transform your workspace?"<br />
+- "Schedule Free Consultation" button<br />
+- Contact info</p>
+<hr />
+<h3>📋 SERVICES PAGES</h3>
+<h4>Services Landing Page</h4>
+<ul>
+<li>Overview of all services</li>
+<li>How the process works</li>
+<li>CTA to schedule assessment</li>
+</ul>
+<h4>Ergonomic Assessments Page</h4>
+<p><strong>Headline</strong>: "Professional Ergonomic Assessments That Prevent Injuries &amp; Boost Productivity"</p>
+<p><strong>Structure</strong>:<br />
+1. <strong>What's Included</strong><br />
+   - Comprehensive workstation evaluation<br />
+   - Posture and movement analysis<br />
+   - Equipment and furniture assessment<br />
+   - Detailed recommendations report<br />
+   - Implementation support</p>
+<ol>
+<li><strong>The Process</strong> (4 Steps)</li>
+<li>Initial Consultation</li>
+<li>On-Site Assessment</li>
+<li>Detailed Report &amp; Recommendations</li>
+<li>
+<p>Implementation Support</p>
+</li>
+<li>
+<p><strong>Who Needs This</strong></p>
+</li>
+<li>Healthcare facilities with long-shift workers</li>
+<li>Tech companies preventing RSI</li>
+<li>Government agencies meeting compliance</li>
+<li>
+<p>Any business seeing fatigue/injury issues</p>
+</li>
+<li>
+<p><strong>Michael's Credentials</strong></p>
+</li>
+<li>COESp – Certified Office Ergonomics Specialist</li>
+<li>CRESp – Certified Remote Ergonomics Specialist</li>
+<li>
+<p>[Other credentials]</p>
+</li>
+<li>
+<p><strong>Outcomes &amp; Benefits</strong></p>
+</li>
+<li>Reduced worker injuries</li>
+<li>Improved productivity</li>
+<li>Lower insurance costs</li>
+<li>
+<p>Compliance with safety standards</p>
+</li>
+<li>
+<p><strong>CTA</strong>: "Schedule Your Assessment"</p>
+</li>
+</ol>
+<h4>Workspace Design Page</h4>
+<p><strong>Headline</strong>: "Strategic Workspace Design for Modern Commercial Environments"</p>
+<p><strong>Content</strong>:<br />
+- How WegoErgo approaches space planning<br />
+- Collaboration with designers/architects<br />
+- Modular and flexible solutions<br />
+- Case study or examples<br />
+- CTA: "Discuss Your Project"</p>
+<h4>Product Selection &amp; Sourcing Page</h4>
+<p><strong>Headline</strong>: "Access to Top Commercial Furniture Brands—Curated for Your Needs"</p>
+<p><strong>Content</strong>:<br />
+- How partner selection works<br />
+- Why not all furniture is ergonomic<br />
+- Michael's expertise in product matching<br />
+- Partner brands showcase<br />
+- CTA: "Explore Our Partners"</p>
+<hr />
+<h3>🏢 INDUSTRY PAGES</h3>
+<p><strong>Template Structure for Each Industry</strong>:</p>
+<h4>Healthcare Example</h4>
+<p><strong>Headline</strong>: "Ergonomic Solutions for Healthcare Facilities"</p>
+<p><strong>Hero Image</strong>: Healthcare setting with ergonomic furniture</p>
+<p><strong>Section 1: The Challenge</strong><br />
+- Long shifts and repetitive motions<br />
+- Need for cleanable, durable furniture<br />
+- Variety of spaces (patient rooms, staff areas, waiting rooms)</p>
+<p><strong>Section 2: Our Solutions</strong></p>
+<p>Four Sub-Categories:<br />
+1. <strong>Staff Workspaces</strong><br />
+   - Ergonomic desks<br />
+   - Task chairs with long-shift support<br />
+   - Sit-stand solutions</p>
+<ol>
+<li><strong>Patient Rooms</strong></li>
+<li>Comfortable, cleanable furniture</li>
+<li>
+<p>Safety-focused designs</p>
+</li>
+<li>
+<p><strong>Waiting Areas</strong></p>
+</li>
+<li>Welcoming, durable seating</li>
+<li>
+<p>Easy-to-maintain materials</p>
+</li>
+<li>
+<p><strong>Administrative Offices</strong></p>
+</li>
+<li>Standard office ergonomics</li>
+<li>Privacy and efficiency</li>
+</ol>
+<p><strong>Section 3: Featured Products</strong><br />
+- 3-4 products perfect for healthcare<br />
+- Images + brief description<br />
+- "Request Quote" CTA</p>
+<p><strong>Section 4: Assessment Services</strong><br />
+- Why ergonomic assessments matter in healthcare<br />
+- CTA: "Schedule Healthcare Assessment"</p>
+<p><strong>Section 5: Case Study or Testimonial</strong> (if available)</p>
+<p><strong>Final CTA</strong>: "Let's Create a Healthier Workspace" + Contact form</p>
+<hr />
+<p><strong>Repeat this template for</strong>:<br />
+- Government &amp; Public Sector<br />
+- Corporate &amp; Tech<br />
+- Education<br />
+- Lab &amp; Life Sciences<br />
+- Small Business<br />
+- Hospitality<br />
+- Outdoor Spaces</p>
+<p><em>(Customize content for each industry's unique needs)</em></p>
+<hr />
+<h3>🪑 PRODUCTS &amp; PARTNERS PAGE</h3>
+<p><strong>This is the KEY page for solving the partner confusion</strong></p>
+<p><strong>Headline</strong>: "Premium Commercial Furniture from Industry-Leading Manufacturers"</p>
+<p><strong>Subheadline</strong>: "WegoErgo represents the best brands in commercial ergonomic furniture. We help you find the perfect solutions—backed by expert guidance."</p>
+<h4>Section 1: How It Works</h4>
+<pre class="codehilite"><code>┌─────────────────────────────────────────┐
+│  1. ASSESS YOUR NEEDS                   │
+│  We conduct a thorough ergonomic        │
+│  assessment of your workspace           │
+│                                         │
+│  2. CURATE SOLUTIONS                    │
+│  Michael selects products from our      │
+│  partner brands that match your needs   │
+│                                         │
+│  3. COORDINATE DELIVERY                 │
+│  We work with trusted dealers and       │
+│  installers for seamless implementation │
+└─────────────────────────────────────────┘
+</code></pre>
+
+<h4>Section 2: Our Partner Brands</h4>
+<p><strong>Grid layout with brand logos and brief descriptions</strong>:</p>
+<pre class="codehilite"><code>┌──────────────┬──────────────┬──────────────┐
+│  OM SEATING  │   WORKRITE   │ LONESTAR    │
+│  [Logo]      │   [Logo]     │  [Logo]      │
+│  Premium     │   Sit-stand  │  Ergonomic   │
+│  ergonomic   │   solutions  │  accessories │
+│  seating     │              │              │
+│  [View Line] │  [View Line] │ [View Line]  │
+└──────────────┴──────────────┴──────────────┘
+
+[Add 3-6 more partner brands]
+</code></pre>
+
+<h4>Section 3: Shop by Category</h4>
+<p><strong>Four main categories</strong> (each links to category page):<br />
+1. Ergonomic Seating<br />
+2. Desks &amp; Workstations<br />
+3. Ergonomic Accessories (monitor arms, keyboard trays, etc.)<br />
+4. Outdoor Furniture</p>
+<h4>Section 4: Why Buy Through WegoErgo</h4>
+<p><strong>3 Key Benefits</strong>:<br />
+1. <strong>Expert Guidance</strong> - Not just products, but the right solutions<br />
+2. <strong>Seamless Coordination</strong> - We handle sourcing, delivery, installation<br />
+3. <strong>Long-term Support</strong> - Adjustments and follow-up included</p>
+<p><strong>CTA</strong>: "Schedule Consultation" or "Request Product Recommendations"</p>
+<hr />
+<h3>Individual Partner Brand Pages</h3>
+<p><strong>Example: OM Seating Page</strong></p>
+<p><strong>Headline</strong>: "OM Seating - Premium Ergonomic Seating Solutions"</p>
+<p><strong>Hero Image</strong>: Beautiful OM Seating product in environment</p>
+<p><strong>Section 1: About OM Seating</strong><br />
+- Brief brand story<br />
+- Why WegoErgo partners with them<br />
+- Key strengths (durability, customization, healthcare focus, etc.)</p>
+<p><strong>Section 2: Featured Products</strong></p>
+<p><strong>Product Cards</strong> (6-8 products):</p>
+<pre class="codehilite"><code>┌────────────────────────────────┐
+│  [Product Image]               │
+│  PRODUCT NAME                  │
+│  Brief description highlighting│
+│  key ergonomic features        │
+│                               │
+│  ✓ Feature 1                   │
+│  ✓ Feature 2                   │
+│  ✓ Feature 3                   │
+│                               │
+│  [Request Quote] [Learn More]  │
+└────────────────────────────────┘
+</code></pre>
+
+<p><strong>Section 3: Applications</strong><br />
+- Best for: Healthcare, Corporate, Education, etc.<br />
+- Environment examples</p>
+<p><strong>Section 4: Customization Options</strong><br />
+- Fabric choices<br />
+- Color options<br />
+- Configuration possibilities</p>
+<p><strong>Section 5: Why Michael Recommends OM Seating</strong><br />
+- Personal quote from Michael<br />
+- Specific use cases where this brand excels</p>
+<p><strong>Final CTA Section</strong>:<br />
+- "Interested in OM Seating for your facility?"<br />
+- Primary CTA: "Schedule Consultation"<br />
+- Secondary: "Visit OM Seating Website" (opens new tab)</p>
+<hr />
+<h3>Product Category Pages</h3>
+<p><strong>Example: Ergonomic Seating Category Page</strong></p>
+<p><strong>Headline</strong>: "Ergonomic Seating Solutions for Commercial Environments"</p>
+<p><strong>Intro</strong>: Brief explanation of why ergonomic seating matters</p>
+<p><strong>Filter/Sort Section</strong>:<br />
+- By Brand (OM Seating, LoneStar, etc.)<br />
+- By Application (Healthcare, Corporate, Education, etc.)<br />
+- By Type (Task chairs, Conference, Stools, etc.)</p>
+<p><strong>Product Grid</strong>:<br />
+- 12-20 products across all partner brands<br />
+- Each product card same format as above<br />
+- Clicking goes to individual product detail (see below)</p>
+<hr />
+<h3>Individual Product Pages</h3>
+<p><strong>Example: "OM Active Task Chair"</strong></p>
+<p><strong>Layout</strong>:</p>
+<pre class="codehilite"><code>┌─────────────────────────────────────────────────┐
+│  [Large Product Image Gallery]  │  PRODUCT NAME │
+│  [Multiple angles]               │               │
+│                                  │  Brief tagline│
+│                                  │               │
+│                                  │  [Request     │
+│                                  │   Quote]      │
+└─────────────────────────────────────────────────┘
+
+OVERVIEW
+Detailed description of product, ergonomic features, benefits
+
+KEY FEATURES
+✓ Feature 1
+✓ Feature 2
+✓ Feature 3
+✓ Feature 4
+
+IDEAL FOR
+- Healthcare facilities
+- Corporate offices
+- Long shifts
+
+SPECIFICATIONS
+- Dimensions
+- Weight capacity
+- Adjustments available
+- Warranty
+
+CUSTOMIZATION
+- Fabric options
+- Color selections
+- Armrest choices
+
+WHY MICHAEL RECOMMENDS THIS
+Personal insight about when this product is the best choice
+
+RELATED PRODUCTS
+[3-4 similar products]
+
+CTA SECTION
+&quot;Want to discuss if this is right for your space?&quot;
+[Schedule Consultation] [Request Quote]
+</code></pre>
+
+<hr />
+<h3>👤 ABOUT PAGES</h3>
+<h4>About WegoErgo Page</h4>
+<p><strong>Headline</strong>: "Elevating Workspaces Across the Bay Area"</p>
+<p><strong>Structure</strong>:</p>
+<p><strong>Section 1: Our Mission</strong><br />
+- The WegoErgo story (from business doc)<br />
+- "More than a product provider—a partner in wellness"<br />
+- Michael's vision</p>
+<p><strong>Section 2: What Makes Us Different</strong></p>
+<p><strong>Three pillars</strong>:<br />
+1. <strong>Local Expertise</strong><br />
+   - Based in Livermore Valley<br />
+   - Understanding of Bay Area business needs<br />
+   - Hands-on service approach</p>
+<ol>
+<li><strong>Professional Credentials</strong></li>
+<li>Certified ergonomist</li>
+<li>Industry partnerships</li>
+<li>
+<p>Ongoing education</p>
+</li>
+<li>
+<p><strong>Full-Service Approach</strong></p>
+</li>
+<li>Assessment</li>
+<li>Design</li>
+<li>Sourcing</li>
+<li>Installation</li>
+<li>Follow-up</li>
+</ol>
+<p><strong>Section 3: Our Service Area</strong><br />
+- Map of Bay Area<br />
+- "Proudly serving [list cities/regions]"</p>
+<p><strong>Section 4: Our Partners</strong><br />
+- Brief mention of partner relationships<br />
+- Link to Partners page</p>
+<p><strong>Section 5: CTA</strong><br />
+- "Ready to start your project?"<br />
+- [Schedule Consultation]</p>
+<hr />
+<h4>Meet Michael Page</h4>
+<p><strong>Headline</strong>: "Meet Michael Schiller - Founder &amp; Certified Ergonomist"</p>
+<p><strong>Hero</strong>: Professional photo of Michael (preferably in action—conducting assessment or with client)</p>
+<p><strong>Structure</strong>:</p>
+<p><strong>Section 1: Michael's Story</strong><br />
+- Background in Occupational Safety<br />
+- Why he started WegoErgo<br />
+- Personal philosophy: "everyone deserves a workspace that supports their health, productivity, and well-being"</p>
+<p><strong>Section 2: Professional Credentials</strong></p>
+<p>Display prominently:<br />
+- <strong>CUSP</strong> – Certified Utility Safety Professional<br />
+- <strong>COESp</strong> – Certified Office Ergonomics Specialist<br />
+- <strong>CRESp</strong> – Certified Remote Ergonomics Specialist<br />
+- <strong>CRM</strong> – Certified Risk Manager</p>
+<p><strong>Section 3: Michael's Approach</strong><br />
+- Human-centered design<br />
+- Education-focused<br />
+- Personalized solutions<br />
+- "Blessed to serve others by creating spaces that promote well-being"</p>
+<p><strong>Section 4: Personal Touch</strong> (optional)<br />
+- Brief personal info (Bay Area native, hobbies, etc.)<br />
+- Makes him relatable and human</p>
+<p><strong>Section 5: CTA</strong><br />
+- "Work with Michael"<br />
+- [Schedule Consultation]</p>
+<hr />
+<h3>📞 CONTACT PAGE</h3>
+<p><strong>Headline</strong>: "Let's Create a Healthier Workspace Together"</p>
+<p><strong>Layout</strong>:</p>
+<pre class="codehilite"><code>┌────────────────┬──────────────────┐
+│  CONTACT FORM  │  CONTACT INFO    │
+│                │                  │
+│  Name          │  📞 Phone        │
+│  Email         │  ✉️ Email        │
+│  Company       │  📍 Location     │
+│  Message       │                  │
+│                │  HOURS           │
+│  [Submit]      │  Mon-Fri 8-5     │
+│                │                  │
+│                │  [Map or         │
+│                │   Service Area]  │
+└────────────────┴──────────────────┘
+</code></pre>
+
+<p><strong>Form Fields</strong>:<br />
+- Name<em><br />
+- Email</em><br />
+- Phone*<br />
+- Company<br />
+- Industry (dropdown)<br />
+- Project Type (dropdown: Assessment, Furniture, Both, Not Sure)<br />
+- Message<br />
+- How did you hear about us? (optional)</p>
+<p><strong>Below Form</strong>:<br />
+- "Prefer to call? [Phone Number]"<br />
+- "Email us directly: [Email]"</p>
+<p><strong>Section 2: What Happens Next</strong><br />
+1. We'll respond within 24 hours<br />
+2. Schedule a free consultation<br />
+3. Assess your needs<br />
+4. Provide tailored recommendations</p>
+<hr />
+<h2>🎨 Design Guidelines for Squarespace</h2>
+<h3>Brand Personality</h3>
+<ul>
+<li>Professional but approachable</li>
+<li>Expert but not corporate/stuffy</li>
+<li>Health-focused</li>
+<li>Human-centered</li>
+<li>Local/community-oriented</li>
+</ul>
+<h3>Color Palette Suggestions</h3>
+<p><strong>Primary</strong>:<br />
+- Deep professional blue or green (trust, health, wellness)<br />
+- e.g., #2C5F7C or #3A7D5C</p>
+<p><strong>Secondary</strong>:<br />
+- Warm accent (orange/coral for CTAs)<br />
+- e.g., #E67E50</p>
+<p><strong>Neutral</strong>:<br />
+- Clean whites and light grays<br />
+- Charcoal for text (#333333)</p>
+<h3>Typography</h3>
+<ul>
+<li><strong>Headers</strong>: Bold, modern sans-serif (like Montserrat, Poppins)</li>
+<li><strong>Body</strong>: Clean, readable sans-serif (like Open Sans, Inter)</li>
+<li><strong>Size</strong>: Large, readable fonts (18px minimum for body)</li>
+</ul>
+<h3>Imagery Style</h3>
+<ul>
+<li>High-quality, real workplace photos</li>
+<li>Show people using ergonomic furniture</li>
+<li>Diverse workplaces</li>
+<li>Natural lighting</li>
+<li>Avoid stock photos that look too "stock"</li>
+<li>Feature Michael in real assessment scenarios</li>
+</ul>
+<h3>Layout Principles</h3>
+<ul>
+<li>Lots of white space (don't cram)</li>
+<li>Clear visual hierarchy</li>
+<li>Mobile-first design</li>
+<li>Fast loading</li>
+<li>Clear CTAs that stand out</li>
+</ul>
+<hr />
+<h2>📱 Conversion Optimization Strategy</h2>
+<h3>Primary Conversion Goal</h3>
+<p><strong>Get visitors to schedule a consultation/assessment</strong></p>
+<h3>Secondary Goals</h3>
+<ol>
+<li>Contact form submission</li>
+<li>Phone call</li>
+<li>Email inquiry</li>
+</ol>
+<h3>CTA Strategy</h3>
+<p><strong>Primary CTA</strong> (use everywhere):<br />
+- "Schedule Free Consultation"<br />
+- "Schedule Assessment"<br />
+- "Get Started"</p>
+<p><strong>Secondary CTA</strong> (supporting):<br />
+- "Request Quote"<br />
+- "Learn More"<br />
+- "View Products"</p>
+<p><strong>CTA Placement</strong>:<br />
+- Hero section of every page<br />
+- After each major content section<br />
+- Sticky footer on mobile<br />
+- Navigation bar (top right)</p>
+<h3>Trust Signals Throughout Site</h3>
+<ol>
+<li><strong>Credentials</strong> - Display Michael's certifications prominently</li>
+<li><strong>Partner Logos</strong> - Show brand relationships</li>
+<li><strong>Service Area</strong> - "Proudly serving Bay Area"</li>
+<li><strong>Process Transparency</strong> - Show clear "how it works"</li>
+<li><strong>Contact Info Visible</strong> - Phone/email always accessible</li>
+<li><strong>Testimonials</strong> (if available) - Real client feedback</li>
+</ol>
+<hr />
+<h2>📊 Recommended Squarespace Template</h2>
+<p><strong>Best Template Options</strong>:<br />
+1. <strong>Comet</strong> - Clean, professional, great for services<br />
+2. <strong>Beacon</strong> - Modern with strong CTAs<br />
+3. <strong>Horizon</strong> - Product showcase-friendly<br />
+4. <strong>Artesia</strong> - Professional services focus</p>
+<p><strong>Template Requirements</strong>:<br />
+- Multiple dropdown navigation support<br />
+- Good gallery/product display<br />
+- Contact form integration<br />
+- Mobile-responsive<br />
+- Fast loading</p>
+<hr />
+<h2>🚀 Implementation Priority</h2>
+<h3>Phase 1: Core Pages (Week 1-2)</h3>
+<ol>
+<li>Homepage</li>
+<li>About/Meet Michael</li>
+<li>Contact</li>
+<li>Services Landing + Ergonomic Assessments page</li>
+</ol>
+<h3>Phase 2: Industries (Week 2-3)</h3>
+<ol>
+<li>Industry landing page</li>
+<li>Top 3-4 industry pages (Healthcare, Corporate, Small Business, Education)</li>
+</ol>
+<h3>Phase 3: Products &amp; Partners (Week 3-4)</h3>
+<ol>
+<li>Products &amp; Partners main page</li>
+<li>Top 3 partner brand pages (OM Seating, LoneStar, Workrite)</li>
+<li>Product category pages</li>
+</ol>
+<h3>Phase 4: Complete &amp; Polish (Week 4-5)</h3>
+<ol>
+<li>Remaining industry pages</li>
+<li>Remaining partner pages</li>
+<li>Individual product pages (ongoing)</li>
+<li>Final design polish</li>
+<li>Mobile optimization</li>
+<li>SEO optimization</li>
+</ol>
+<hr />
+<h2>📝 Content Writing Tips</h2>
+<h3>Tone of Voice</h3>
+<ul>
+<li><strong>Conversational but professional</strong> - "We help you create..." not "WegoErgo provides..."</li>
+<li><strong>Benefit-focused</strong> - Lead with outcomes, not features</li>
+<li><strong>Jargon-free</strong> - Explain ergonomic concepts simply</li>
+<li><strong>Action-oriented</strong> - Tell visitors what to do next</li>
+</ul>
+<h3>Key Messages to Emphasize</h3>
+<ol>
+<li>You're not just selling furniture—you're solving workplace health problems</li>
+<li>Michael's expertise ensures the RIGHT solutions, not just products</li>
+<li>Full-service approach (assess → design → source → install)</li>
+<li>Local Bay Area focus and understanding</li>
+<li>Not ecommerce—you're a consultant and representative</li>
+</ol>
+<h3>SEO Keywords to Target</h3>
+<ul>
+<li>Ergonomic assessment Bay Area</li>
+<li>Commercial furniture [city name]</li>
+<li>Ergonomic office furniture</li>
+<li>Healthcare furniture solutions</li>
+<li>[Industry] + ergonomic solutions</li>
+<li>OM Seating dealer</li>
+<li>Ergonomist Livermore</li>
+</ul>
+<hr />
+<h2>✅ Success Metrics</h2>
+<h3>How to Measure Success</h3>
+<ol>
+<li><strong>Increased consultation requests</strong> - Primary goal</li>
+<li><strong>Reduced bounce rate</strong> - Better clarity</li>
+<li><strong>Improved time on site</strong> - More engagement</li>
+<li><strong>More page views per session</strong> - Better navigation</li>
+<li><strong>Mobile traffic engagement</strong> - Responsive design</li>
+<li><strong>Contact form submissions</strong> - Multiple conversion paths</li>
+</ol>
+<h3>Post-Launch Actions</h3>
+<ol>
+<li>Set up Google Analytics</li>
+<li>Install heatmap tool (like Hotjar)</li>
+<li>A/B test CTAs</li>
+<li>Collect client testimonials</li>
+<li>Add case studies over time</li>
+<li>Create blog for SEO (optional phase 2)</li>
+</ol>
+<hr />
+<h2>🎯 Final Notes</h2>
+<h3>What This Redesign Solves</h3>
+<p>✅ <strong>Clear value proposition</strong> - Visitors immediately understand what you do<br />
+✅ <strong>Partner positioning</strong> - Shows products without being ecommerce<br />
+✅ <strong>Simplified navigation</strong> - Easy to find information<br />
+✅ <strong>Strong conversion path</strong> - Multiple CTAs throughout<br />
+✅ <strong>Professional credibility</strong> - Highlights Michael's expertise<br />
+✅ <strong>Industry-specific messaging</strong> - Speaks to each audience<br />
+✅ <strong>Mobile-friendly</strong> - Modern, responsive design<br />
+✅ <strong>Scalable structure</strong> - Easy to add partners/products over time</p>
+<h3>The Differentiator</h3>
+<p><strong>Before</strong>: "Here are some furniture brands and we do assessments"<br />
+<strong>After</strong>: "We're ergonomic experts who connect you with the industry's best solutions through a full-service approach"</p>
+<p><strong>This positions WegoErgo as the EXPERT and CURATOR, not just a middleman.</strong></p>
+<hr />
+<h2>Next Steps</h2>
+<ol>
+<li>Review this strategy document</li>
+<li>Select Squarespace template</li>
+<li>Gather all imagery (products, Michael, workspaces)</li>
+<li>Begin building following the prioritized phase plan</li>
+<li>Write copy for each page using tone/content guidelines</li>
+<li>Implement design using color/typography guidelines</li>
+<li>Test on mobile devices</li>
+<li>Launch and monitor</li>
+</ol>
+<hr />
+<p><strong>Questions or need clarification on any section? Let's discuss before you start building!</strong></p>
+    </div>
+</body>
+</html>

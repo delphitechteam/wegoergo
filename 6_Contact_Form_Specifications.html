@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Contact Form Specifications</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2C5F7C;
+            border-bottom: 3px solid #E67E50;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #2C5F7C;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2C5F7C;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 1.5em;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-size: 1.2em;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #2C5F7C;
+            font-weight: 600;
+        }
+
+        em {
+            color: #666;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #E67E50;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.5;
+            margin: 1.5em 0;
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #f8f8f2;
+            font-size: 0.95em;
+        }
+
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin: 0.5em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #2C5F7C;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        blockquote {
+            border-left: 4px solid #E67E50;
+            margin: 1.5em 0;
+            padding: 0.5em 1.5em;
+            background: #f9f9f9;
+            font-style: italic;
+            color: #666;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 2em 0;
+        }
+
+        a {
+            color: #2C5F7C;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #2C5F7C;
+        }
+
+        .header-info {
+            background: #E8F4F8;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2C5F7C;
+        }
+
+        .header-info p {
+            margin: 0.5em 0;
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            pre {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                max-width: 100%;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-info">
+            <p><strong>Document:</strong> 6_Contact_Form_Specifications</p>
+            <p><strong>Generated from:</strong> 6_Contact_Form_Specifications.md</p>
+            <p><strong>WegoErgo Website Redesign Project</strong></p>
+        </div>
+        <h1>Contact Form Specifications</h1>
+<p><strong>Complete Contact Page Design &amp; Form Configuration for Squarespace</strong></p>
+<hr />
+<h2>Contact Page Goal</h2>
+<p><strong>Primary:</strong> Capture leads from visitors ready to schedule consultations or request quotes<br />
+<strong>Secondary:</strong> Provide easy ways to reach WegoErgo (phone, email, location)</p>
+<p><strong>Key Strategy:</strong> Make it EASY to contact you with multiple options and a simple form</p>
+<hr />
+<h2>PAGE LAYOUT</h2>
+<h3>Overall Structure</h3>
+<pre class="codehilite"><code>┌────────────────────────────────────────────────────────────┐
+│                    CONTACT PAGE                            │
+│                                                            │
+│  ┌──────────────────────────────────────────────┐         │
+│  │             PAGE HEADER                       │         │
+│  │  Let's Create a Healthier Workspace Together  │         │
+│  └──────────────────────────────────────────────┘         │
+│                                                            │
+│  ┌─────────────────────┬──────────────────────┐          │
+│  │  CONTACT FORM       │  CONTACT INFO        │          │
+│  │  (60% width)        │  (40% width)         │          │
+│  │                     │                      │          │
+│  │  [Form fields...]   │  📞 Phone            │          │
+│  │                     │  ✉️ Email            │          │
+│  │                     │  📍 Location         │          │
+│  │                     │  🕐 Hours            │          │
+│  │                     │                      │          │
+│  │  [Submit Button]    │  [Map/Image]         │          │
+│  └─────────────────────┴──────────────────────┘          │
+│                                                            │
+│  ┌──────────────────────────────────────────────┐         │
+│  │          WHAT HAPPENS NEXT                    │         │
+│  │  (Process timeline after form submission)     │         │
+│  └──────────────────────────────────────────────┘         │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h2>SECTION 1: PAGE HEADER</h2>
+<h3>Content</h3>
+<p><strong>H1 HEADLINE:</strong></p>
+<pre class="codehilite"><code>Let's Create a Healthier Workspace Together
+</code></pre>
+
+<p><strong>SUBHEADLINE:</strong></p>
+<pre class="codehilite"><code>Whether you need an ergonomic assessment, workspace design, or help
+selecting the perfect furniture, we're here to help. Reach out today
+and let's discuss your project.
+</code></pre>
+
+<p><strong>Design:</strong><br />
+- Centered text<br />
+- Clean, professional<br />
+- Ample white space<br />
+- Desktop: 60% width centered<br />
+- Mobile: 90% width</p>
+<hr />
+<h2>SECTION 2: CONTACT FORM</h2>
+<h3>Form Layout (Left Column - 60%)</h3>
+<pre class="codehilite"><code>┌─────────────────────────────────────────┐
+│  YOUR INFORMATION                       │
+│                                         │
+│  First Name *       Last Name *        │
+│  [            ]     [            ]      │
+│                                         │
+│  Email Address *                        │
+│  [                              ]       │
+│                                         │
+│  Phone Number *                         │
+│  [                              ]       │
+│                                         │
+│  Company Name                           │
+│  [                              ]       │
+│                                         │
+│  Industry (dropdown) *                  │
+│  [Select Industry          ▼]          │
+│                                         │
+│  I'm Interested In (dropdown) *         │
+│  [Select Service           ▼]          │
+│                                         │
+│  Tell Us About Your Project *           │
+│  [                              ]       │
+│  [                              ]       │
+│  [                              ]       │
+│  (multiline text area)                  │
+│                                         │
+│  How Did You Hear About Us? (optional)  │
+│  [Select                   ▼]          │
+│                                         │
+│  [ ] Subscribe to newsletter           │
+│                                         │
+│  [     Send Message     ]              │
+│  (submit button)                        │
+│                                         │
+└─────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h3>FORM FIELDS - DETAILED SPECIFICATIONS</h3>
+<h4>Field 1 &amp; 2: Name (Side by Side)</h4>
+<p><strong>First Name</strong><br />
+- Field type: Text input<br />
+- Required: Yes (*)<br />
+- Placeholder: "John"<br />
+- Validation: Letters only, min 2 characters<br />
+- Error message: "Please enter your first name"</p>
+<p><strong>Last Name</strong><br />
+- Field type: Text input<br />
+- Required: Yes (*)<br />
+- Placeholder: "Smith"<br />
+- Validation: Letters only, min 2 characters<br />
+- Error message: "Please enter your last name"</p>
+<p><strong>Layout:</strong> Two columns on desktop, stack on mobile</p>
+<hr />
+<h4>Field 3: Email Address</h4>
+<p><strong>Email Address</strong><br />
+- Field type: Email input<br />
+- Required: Yes (*)<br />
+- Placeholder: "you@company.com"<br />
+- Validation: Valid email format (contains @ and .)<br />
+- Error message: "Please enter a valid email address"</p>
+<hr />
+<h4>Field 4: Phone Number</h4>
+<p><strong>Phone Number</strong><br />
+- Field type: Tel input<br />
+- Required: Yes (*)<br />
+- Placeholder: "(555) 123-4567"<br />
+- Validation: Phone number format (allow various formats)<br />
+- Error message: "Please enter a valid phone number"<br />
+- Auto-formatting: Apply (XXX) XXX-XXXX format if possible</p>
+<hr />
+<h4>Field 5: Company Name</h4>
+<p><strong>Company Name</strong><br />
+- Field type: Text input<br />
+- Required: No<br />
+- Placeholder: "Your Company Name"<br />
+- Validation: None (optional field)</p>
+<hr />
+<h4>Field 6: Industry (Dropdown)</h4>
+<p><strong>Industry</strong><br />
+- Field type: Dropdown select<br />
+- Required: Yes (*)<br />
+- Default option: "Select Your Industry"</p>
+<p><strong>Dropdown Options:</strong></p>
+<pre class="codehilite"><code>Select Your Industry
+─────────────────────
+Healthcare
+Corporate / Tech
+Education
+Government / Public Sector
+Lab &amp; Life Sciences
+Small Business
+Hospitality
+Outdoor / Landscape
+Other
+</code></pre>
+
+<p><strong>Error message:</strong> "Please select your industry"</p>
+<hr />
+<h4>Field 7: Service Interest (Dropdown)</h4>
+<p><strong>I'm Interested In</strong><br />
+- Field type: Dropdown select<br />
+- Required: Yes (*)<br />
+- Default option: "Select a Service"</p>
+<p><strong>Dropdown Options:</strong></p>
+<pre class="codehilite"><code>Select a Service
+─────────────────────────
+Ergonomic Assessment
+Workspace Design
+Product Selection &amp; Sourcing
+Complete Turnkey Solution
+Not Sure / Exploratory
+</code></pre>
+
+<p><strong>Error message:</strong> "Please select a service"</p>
+<hr />
+<h4>Field 8: Project Details</h4>
+<p><strong>Tell Us About Your Project</strong><br />
+- Field type: Textarea (multiline)<br />
+- Required: Yes (*)<br />
+- Placeholder: "Please describe your workspace needs, challenges, or project details..."<br />
+- Rows: 5-6 lines visible<br />
+- Character limit: 1000 characters (optional)<br />
+- Validation: Minimum 20 characters<br />
+- Error message: "Please provide some details about your project (min 20 characters)"</p>
+<hr />
+<h4>Field 9: Referral Source (Optional)</h4>
+<p><strong>How Did You Hear About Us?</strong><br />
+- Field type: Dropdown select<br />
+- Required: No<br />
+- Default option: "Select an option"</p>
+<p><strong>Dropdown Options:</strong></p>
+<pre class="codehilite"><code>Select an option
+─────────────────────────
+Google Search
+LinkedIn
+Referral from Friend/Colleague
+Industry Event
+Social Media
+Existing Client
+Other
+</code></pre>
+
+<hr />
+<h4>Field 10: Newsletter Opt-in</h4>
+<p><strong>Newsletter Subscription</strong><br />
+- Field type: Checkbox<br />
+- Required: No<br />
+- Label: "Yes, I'd like to receive ergonomic tips and product updates from WegoErgo"<br />
+- Default: Unchecked<br />
+- GDPR compliant: Must be opt-in, not pre-checked</p>
+<hr />
+<h3>SUBMIT BUTTON</h3>
+<p><strong>Button Text:</strong></p>
+<pre class="codehilite"><code>Send Message
+</code></pre>
+
+<p><strong>Alternative Options:</strong><br />
+- <code>Submit</code><br />
+- <code>Contact WegoErgo</code><br />
+- <code>Get In Touch</code></p>
+<p><strong>Button Styling:</strong><br />
+- Background: Primary brand color (#E67E50 orange)<br />
+- Text: White<br />
+- Size: Large (full width on mobile)<br />
+- Font weight: Semi-bold<br />
+- Padding: 14px vertical, 40px horizontal<br />
+- Border radius: 6px<br />
+- Hover: Darken slightly, lift effect</p>
+<p><strong>Loading State:</strong><br />
+- Change button text to "Sending..." with spinner<br />
+- Disable button during submission</p>
+<p><strong>Success State:</strong><br />
+- Show success message (see below)<br />
+- Clear form OR redirect to thank you page</p>
+<hr />
+<h3>FORM VALIDATION</h3>
+<p><strong>Client-Side Validation (JavaScript):</strong><br />
+- Real-time validation as user types<br />
+- Show green checkmark for valid fields<br />
+- Show red error message for invalid fields<br />
+- Prevent submission if required fields missing</p>
+<p><strong>Server-Side Validation:</strong><br />
+- Re-validate all fields on backend<br />
+- Sanitize inputs to prevent XSS<br />
+- Check for spam (honeypot field, reCAPTCHA optional)</p>
+<p><strong>Error Handling:</strong><br />
+- Display errors below each field<br />
+- Scroll to first error on submit<br />
+- Keep user data in fields (don't clear on error)</p>
+<hr />
+<h3>SPAM PROTECTION</h3>
+<p><strong>Recommended Methods:</strong></p>
+<ol>
+<li><strong>Honeypot Field (Invisible):</strong></li>
+<li>Add hidden field "website" or "url"</li>
+<li>Hide with CSS (not display:none)</li>
+<li>If filled, reject as spam</li>
+<li>
+<p>Best: invisible to users, effective against bots</p>
+</li>
+<li>
+<p><strong>Google reCAPTCHA v3 (Optional):</strong></p>
+</li>
+<li>Invisible to users</li>
+<li>Scores submissions 0-1</li>
+<li>Reject scores below 0.5</li>
+<li>
+<p>Downside: Google branding, privacy concerns</p>
+</li>
+<li>
+<p><strong>Time-Based Check:</strong></p>
+</li>
+<li>Track form load time</li>
+<li>Reject if submitted in &lt; 3 seconds</li>
+<li>Humans can't fill form that fast</li>
+</ol>
+<p><strong>Recommended: Use honeypot + time-based check</strong> (no user friction)</p>
+<hr />
+<h2>SECTION 3: CONTACT INFORMATION (Right Column - 40%)</h2>
+<h3>Layout</h3>
+<pre class="codehilite"><code>┌─────────────────────────────────┐
+│   CONTACT INFORMATION           │
+│                                 │
+│   📞 PHONE                      │
+│   (XXX) XXX-XXXX               │
+│   [Call Now]                    │
+│                                 │
+│   ✉️ EMAIL                      │
+│   info@wegoergo.com            │
+│   [Email Us]                    │
+│                                 │
+│   📍 LOCATION                   │
+│   Livermore Valley, CA          │
+│   Serving the greater Bay Area │
+│                                 │
+│   🕐 HOURS                      │
+│   Monday - Friday               │
+│   8:00 AM - 5:00 PM PST        │
+│   Weekends: By appointment      │
+│                                 │
+│   ─────────────────────────    │
+│                                 │
+│   [Map or Service Area Image]   │
+│   or [Photo of Michael]         │
+│                                 │
+└─────────────────────────────────┘
+</code></pre>
+
+<h3>Content</h3>
+<p><strong>PHONE</strong></p>
+<pre class="codehilite"><code>📞 PHONE
+(925) XXX-XXXX
+[Call Now]
+</code></pre>
+
+<ul>
+<li>Make phone number clickable: <code>tel:+19255551234</code></li>
+<li>Button opens phone dialer on mobile</li>
+</ul>
+<p><strong>EMAIL</strong></p>
+<pre class="codehilite"><code>✉️ EMAIL
+info@wegoergo.com
+[Email Us]
+</code></pre>
+
+<ul>
+<li>Make email clickable: <code>mailto:info@wegoergo.com</code></li>
+<li>Button opens email client</li>
+</ul>
+<p><strong>LOCATION</strong></p>
+<pre class="codehilite"><code>📍 LOCATION
+Livermore Valley, California
+Serving the greater Bay Area
+</code></pre>
+
+<ul>
+<li>Optional: Add full address if you have physical location</li>
+<li>If no physical address, keep it regional</li>
+</ul>
+<p><strong>HOURS</strong></p>
+<pre class="codehilite"><code>🕐 BUSINESS HOURS
+Monday - Friday
+8:00 AM - 5:00 PM PST
+Weekends: By appointment only
+</code></pre>
+
+<p><strong>VISUAL ELEMENT:</strong><br />
+- Map showing Bay Area coverage<br />
+- OR: Professional photo of Michael<br />
+- OR: Office/workspace photo<br />
+- Size: 300x300px minimum</p>
+<hr />
+<h3>MOBILE LAYOUT FOR CONTACT INFO</h3>
+<p><strong>On Mobile:</strong><br />
+- Contact info section moves ABOVE form<br />
+- Shows as full-width cards<br />
+- Phone/Email buttons prominent<br />
+- Easy one-tap calling/emailing</p>
+<hr />
+<h2>SECTION 4: WHAT HAPPENS NEXT</h2>
+<h3>Layout</h3>
+<pre class="codehilite"><code>┌────────────────────────────────────────────────────────────┐
+│              WHAT HAPPENS NEXT?                            │
+│                                                            │
+│  After you submit your inquiry, here's what to expect:    │
+│                                                            │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐ │
+│  │    1️⃣    │  │    2️⃣    │  │    3️⃣    │  │    4️⃣    │ │
+│  │          │  │          │  │          │  │          │ │
+│  │We respond│  │Schedule  │  │Assess    │  │Recommend │ │
+│  │within 24 │  │consult   │  │your needs│  │solutions │ │
+│  │hours     │  │          │  │          │  │          │ │
+│  └──────────┘  └──────────┘  └──────────┘  └──────────┘ │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<h3>Content</h3>
+<p><strong>HEADLINE:</strong></p>
+<pre class="codehilite"><code>What Happens Next?
+</code></pre>
+
+<p><strong>INTRO TEXT:</strong></p>
+<pre class="codehilite"><code>After you submit your inquiry, here's what to expect:
+</code></pre>
+
+<p><strong>STEP 1:</strong></p>
+<pre class="codehilite"><code>1️⃣ WE RESPOND WITHIN 24 HOURS
+We'll reach out to confirm your inquiry and answer any initial questions.
+</code></pre>
+
+<p><strong>STEP 2:</strong></p>
+<pre class="codehilite"><code>2️⃣ SCHEDULE A CONSULTATION
+We'll set up a convenient time to discuss your workspace needs—in person
+or virtually.
+</code></pre>
+
+<p><strong>STEP 3:</strong></p>
+<pre class="codehilite"><code>3️⃣ ASSESS YOUR NEEDS
+Michael conducts a thorough assessment of your workspace, workflow, and
+ergonomic challenges.
+</code></pre>
+
+<p><strong>STEP 4:</strong></p>
+<pre class="codehilite"><code>4️⃣ RECEIVE RECOMMENDATIONS
+Get a detailed plan with tailored solutions, product recommendations, and
+implementation support.
+</code></pre>
+
+<p><strong>Design:</strong><br />
+- 4 columns on desktop<br />
+- Stack vertically on mobile<br />
+- Icons or numbers for each step<br />
+- Light background to differentiate from main content</p>
+<hr />
+<h2>FORM SUBMISSION HANDLING</h2>
+<h3>Success Message (Option 1: Inline)</h3>
+<p><strong>On Successful Submission, Replace Form With:</strong></p>
+<pre class="codehilite"><code>┌─────────────────────────────────────────┐
+│        ✅ MESSAGE SENT!                  │
+│                                         │
+│  Thank you for contacting WegoErgo!     │
+│                                         │
+│  We've received your message and will   │
+│  respond within 24 hours. If you need   │
+│  immediate assistance, feel free to     │
+│  call us at (XXX) XXX-XXXX.            │
+│                                         │
+│  [Return to Homepage]                   │
+│                                         │
+└─────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h3>Success Message (Option 2: Redirect to Thank You Page)</h3>
+<p><strong>Create separate "Thank You" page at <code>/thank-you</code></strong></p>
+<p><strong>Thank You Page Content:</strong></p>
+<pre class="codehilite"><code>┌────────────────────────────────────────────────────────────┐
+│                   ✅ THANK YOU!                             │
+│                                                            │
+│         Your message has been sent successfully            │
+│                                                            │
+│  We appreciate you reaching out to WegoErgo. Michael will │
+│  personally review your inquiry and respond within 24     │
+│  hours.                                                   │
+│                                                            │
+│  In the meantime, feel free to:                           │
+│  • [Explore Our Services]                                 │
+│  • [View Our Products]                                    │
+│  • [Read About Michael]                                   │
+│                                                            │
+│  Need immediate help? Call (XXX) XXX-XXXX                 │
+│                                                            │
+│  [Return to Homepage]                                     │
+│                                                            │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+
+<p><strong>Recommendation: Use inline success message</strong> (keeps user on page, less disruptive)</p>
+<hr />
+<h3>Error Message</h3>
+<p><strong>If Form Submission Fails:</strong></p>
+<pre class="codehilite"><code>┌─────────────────────────────────────────┐
+│  ❌ OOPS! SOMETHING WENT WRONG           │
+│                                         │
+│  We couldn't send your message. Please  │
+│  try again or contact us directly:      │
+│                                         │
+│  Phone: (XXX) XXX-XXXX                 │
+│  Email: info@wegoergo.com              │
+│                                         │
+│  [Try Again]                            │
+│                                         │
+└─────────────────────────────────────────┘
+</code></pre>
+
+<hr />
+<h2>EMAIL NOTIFICATIONS</h2>
+<h3>Admin Notification Email (to WegoErgo)</h3>
+<p><strong>Subject Line:</strong></p>
+<pre class="codehilite"><code>New Contact Form Submission from [First Name] [Last Name]
+</code></pre>
+
+<p><strong>Email Body:</strong></p>
+<pre class="codehilite"><code>New contact form submission received:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONTACT INFORMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Name: [First Name] [Last Name]
+Email: [Email Address]
+Phone: [Phone Number]
+Company: [Company Name]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROJECT DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Industry: [Industry]
+Service Interest: [Service]
+
+Project Description:
+[Message text]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ADDITIONAL INFO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Referral Source: [How they heard about you]
+Newsletter Opt-in: [Yes/No]
+
+Submitted: [Date/Time]
+IP Address: [IP] (for spam tracking)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Reply to this inquiry]
+</code></pre>
+
+<hr />
+<h3>Auto-Reply Email (to User)</h3>
+<p><strong>Subject Line:</strong></p>
+<pre class="codehilite"><code>Thanks for contacting WegoErgo!
+</code></pre>
+
+<p><strong>Email Body:</strong></p>
+<pre class="codehilite"><code>Hi [First Name],
+
+Thank you for reaching out to WegoErgo! We've received your message and
+will respond within 24 hours.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+YOUR SUBMISSION DETAILS:
+
+Industry: [Industry]
+Service Interest: [Service]
+
+Project Description:
+[Their message]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+In the meantime, feel free to:
+
+📞 Call us: (XXX) XXX-XXXX
+✉️ Email: info@wegoergo.com
+🌐 Visit our website: www.wegoergo.com
+
+We look forward to helping you create a healthier, more productive workspace!
+
+Best regards,
+Michael Schiller
+Founder &amp; Certified Ergonomist
+WegoErgo
+
+──────────────────────────────────────
+WegoErgo
+Livermore Valley, CA
+www.wegoergo.com
+</code></pre>
+
+<hr />
+<h2>SQUARESPACE FORM SETUP</h2>
+<h3>How to Build This Form in Squarespace</h3>
+<p><strong>Step-by-Step:</strong></p>
+<ol>
+<li><strong>Add Form Block</strong></li>
+<li>Go to Contact page</li>
+<li>
+<p>Add → Form</p>
+</li>
+<li>
+<p><strong>Configure Fields</strong></p>
+</li>
+<li>Click "Edit" on form block</li>
+<li>
+<p>Add fields one by one:</p>
+<ul>
+<li>Text fields (name, email, phone, company)</li>
+<li>Dropdown fields (industry, service, referral)</li>
+<li>Textarea (project details)</li>
+<li>Checkbox (newsletter)</li>
+</ul>
+</li>
+<li>
+<p><strong>Set Required Fields</strong></p>
+</li>
+<li>Toggle "Required" for: First Name, Last Name, Email, Phone, Industry, Service, Message</li>
+<li>
+<p>Leave Company, Referral, Newsletter as optional</p>
+</li>
+<li>
+<p><strong>Configure Form Settings</strong></p>
+</li>
+<li>Storage: Squarespace stores submissions (downloadable)</li>
+<li>
+<p>Email Notifications:</p>
+<ul>
+<li>Send to: info@wegoergo.com (or your email)</li>
+<li>Subject: "New Contact Form Submission"</li>
+<li>Auto-reply: Enable, customize message</li>
+</ul>
+</li>
+<li>
+<p><strong>Customize Thank You Message</strong></p>
+</li>
+<li>Post-Submit: Show message OR redirect to thank you page</li>
+<li>
+<p>Message text (if inline): Use success message above</p>
+</li>
+<li>
+<p><strong>Add Spam Protection</strong></p>
+</li>
+<li>Squarespace has built-in reCAPTCHA option</li>
+<li>
+<p>Enable in Form Settings → Storage → Enable reCAPTCHA</p>
+</li>
+<li>
+<p><strong>Style the Form</strong></p>
+</li>
+<li>Use Squarespace's style editor</li>
+<li>Match brand colors</li>
+<li>Adjust spacing and fonts</li>
+</ol>
+<hr />
+<h2>ACCESSIBILITY REQUIREMENTS</h2>
+<h3>Form Accessibility Checklist</h3>
+<p>✅ <strong>All fields have labels</strong> (not just placeholders)<br />
+✅ <strong>Required fields marked with asterisk (*)</strong><br />
+✅ <strong>Error messages are descriptive</strong><br />
+✅ <strong>Form is keyboard navigable</strong> (tab through fields)<br />
+✅ <strong>Color contrast meets WCAG AA standards</strong> (4.5:1 minimum)<br />
+✅ <strong>Error states visible to screen readers</strong><br />
+✅ <strong>Submit button has focus state</strong><br />
+✅ <strong>Form validates before submission</strong></p>
+<hr />
+<h2>MOBILE OPTIMIZATION</h2>
+<h3>Mobile Form Best Practices</h3>
+<p><strong>Field Inputs:</strong><br />
+- Full width on mobile<br />
+- Large touch targets (min 44px height)<br />
+- Appropriate keyboard types:<br />
+  - Email field → email keyboard<br />
+  - Phone field → number pad<br />
+  - Text field → standard keyboard</p>
+<p><strong>Layout:</strong><br />
+- Stack all fields vertically<br />
+- Contact info moves above form<br />
+- Submit button full width<br />
+- Adequate spacing between fields</p>
+<p><strong>Usability:</strong><br />
+- Auto-focus on first field (optional)<br />
+- Scroll to errors on validation failure<br />
+- Success message highly visible</p>
+<hr />
+<h2>ANALYTICS &amp; TRACKING</h2>
+<h3>Events to Track</h3>
+<p><strong>Google Analytics / Tag Manager:</strong></p>
+<ol>
+<li><strong>Form Views</strong></li>
+<li>Event: <code>form_view</code></li>
+<li>
+<p>Track: Users who land on contact page</p>
+</li>
+<li>
+<p><strong>Form Starts</strong></p>
+</li>
+<li>Event: <code>form_start</code></li>
+<li>
+<p>Track: Users who interact with first field</p>
+</li>
+<li>
+<p><strong>Form Submissions</strong></p>
+</li>
+<li>Event: <code>form_submit</code></li>
+<li>Track: Successful submissions</li>
+<li>
+<p>Parameters: industry, service_interest</p>
+</li>
+<li>
+<p><strong>Form Errors</strong></p>
+</li>
+<li>Event: <code>form_error</code></li>
+<li>Track: Validation errors</li>
+<li>
+<p>Parameters: field_name, error_type</p>
+</li>
+<li>
+<p><strong>Form Abandonment</strong></p>
+</li>
+<li>Event: <code>form_abandon</code></li>
+<li>Track: Users who start but don't submit</li>
+</ol>
+<p><strong>Conversion Goal:</strong><br />
+- Set "Form Submission" as primary conversion goal<br />
+- Track conversion rate<br />
+- Monitor drop-off points</p>
+<hr />
+<h2>GDPR &amp; PRIVACY COMPLIANCE</h2>
+<h3>Required Privacy Elements</h3>
+<p><strong>Privacy Notice (below form):</strong></p>
+<pre class="codehilite"><code>By submitting this form, you agree to our Privacy Policy. We will use
+your information solely to respond to your inquiry and will not share
+it with third parties.
+</code></pre>
+
+<p><strong>Link to Privacy Policy:</strong><br />
+- Create <code>/privacy-policy</code> page<br />
+- Link in footer<br />
+- Link near form submission</p>
+<p><strong>Data Handling:</strong><br />
+- Store submissions securely<br />
+- Don't use data for marketing unless opted in<br />
+- Provide way to request data deletion (GDPR right to be forgotten)</p>
+<hr />
+<h2>INTEGRATION OPTIONS</h2>
+<h3>Optional Integrations</h3>
+<p><strong>CRM Integration:</strong><br />
+- Connect to HubSpot, Salesforce, or Pipedrive<br />
+- Auto-create lead/contact on submission<br />
+- Track lead source</p>
+<p><strong>Email Marketing:</strong><br />
+- If newsletter checkbox selected, add to email list<br />
+- Integrate with Mailchimp, ConvertKit, etc.<br />
+- Send welcome email</p>
+<p><strong>Calendar Booking:</strong><br />
+- Add "Schedule Now" link to success message<br />
+- Integrate Calendly or similar<br />
+- Allow direct booking after form submission</p>
+<p><strong>Slack/SMS Notifications:</strong><br />
+- Get instant alert on new submission<br />
+- Zapier integration for notifications</p>
+<hr />
+<h2>TESTING CHECKLIST</h2>
+<h3>Before Launch, Test:</h3>
+<p>✅ All required fields validate correctly<br />
+✅ Email format validation works<br />
+✅ Phone format validation works<br />
+✅ Dropdown selections save correctly<br />
+✅ Textarea accepts sufficient characters<br />
+✅ Spam protection works (honeypot doesn't block real users)<br />
+✅ Submit button shows loading state<br />
+✅ Success message displays correctly<br />
+✅ Admin notification email arrives<br />
+✅ Auto-reply email arrives to user<br />
+✅ Mobile layout is usable<br />
+✅ Form is keyboard accessible<br />
+✅ Works in all major browsers (Chrome, Safari, Firefox, Edge)</p>
+<hr />
+<h2>SAMPLE COMPLETED FORM DATA</h2>
+<h3>Example Submission</h3>
+<pre class="codehilite"><code>First Name: Jennifer
+Last Name: Martinez
+Email: jmartinez@healthcareclinic.com
+Phone: (510) 555-1234
+Company: Bay Area Health Clinic
+Industry: Healthcare
+I'm Interested In: Ergonomic Assessment
+Message: We're renovating our nursing stations and need ergonomic
+assessments for 30+ workstations. Looking for furniture recommendations
+and installation coordination. Timeline: 3 months.
+How Did You Hear About Us: Google Search
+Newsletter: Yes (checked)
+</code></pre>
+
+<p><strong>This should generate:</strong><br />
+- Admin email to info@wegoergo.com<br />
+- Auto-reply to jmartinez@healthcareclinic.com<br />
+- Entry in Squarespace form submissions<br />
+- (Optional) CRM lead creation<br />
+- (Optional) Newsletter subscription</p>
+<hr />
+<p><strong>This contact form is designed for maximum conversion with minimum friction. Simple, clear, and optimized for both desktop and mobile. You now have all 6 deliverables complete and ready to implement!</strong></p>
+    </div>
+</body>
+</html>
